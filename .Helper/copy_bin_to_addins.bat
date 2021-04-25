@@ -1,0 +1,1 @@
+xcopy /E F:\Git\ProRevit\DtreeApplication\DtreeApplication\bin C:\ProgramData\Autodesk\Revit\Addins\2020

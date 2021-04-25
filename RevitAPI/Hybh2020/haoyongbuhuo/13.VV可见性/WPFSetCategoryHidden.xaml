@@ -1,0 +1,208 @@
+﻿<Window x:Class="hybh.WPFSetCategoryHidden"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             mc:Ignorable="d" 
+             Width="300" Height="720" Closed="Window_Closed" Title="图元可见性管理" WindowStartupLocation="CenterScreen" MinWidth="300" MaxWidth="300" MinHeight="720" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--设置 土建-->
+        <StackPanel Grid.Column="0" Margin="0,0,0.4,0" Grid.RowSpan="2">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFE3FFFF" Offset="0.995"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label  Content="土建" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" 
+                   HorizontalContentAlignment="Center" Foreground="Black" Margin="0" FontWeight="Bold" IsEnabled="False">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="White" Offset="0.877"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+
+            <!--设置 土建 按钮-->
+            <Button Background="White" x:Name="button_Wall" Click="Button_Wall_Click"
+                Content="墙" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Floor" Click="Button_Floor_Click"
+                Content="楼板" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_StructuralFraming" Click="button_StructuralFraming_Click"
+                Content="结构梁" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_StructuralColumns" Click="button_StructuralColumns_Click"
+                Content="结构柱" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_StructuralFoundation" Click="button_StructuralFoundation_Click"
+                Content="基础" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Rebar" Click="button_Rebar_Click"
+                Content="钢筋" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_GenericModel" Click="button_GenericModel_Click"
+                Content="常规模型" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Doors" Click="button_Doors_Click"
+                Content="门" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Windows" Click="button_Windows_Click"
+                Content="窗" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_StairsRailing" Click="button_StairsRailing_Click"
+                Content="栏杆" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Stairs" Click="button_Stairs_Click"
+                Content="楼梯" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Roofs" Click="button_Roofs_Click"
+                Content="屋顶" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Ramps" Click="button_Ramps_Click"
+                Content="坡道" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Mass" Click="button_Mass_Click"
+                Content="体量" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Topography" Click="button_Topography_Click"
+                Content="地形" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_Planting" Click="button_Planting_Click"
+                Content="植物" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_CurtainWallPanels" Click="button_CurtainWallPanels_Click"
+                Content="幕墙嵌板" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_CurtainWallMullions" Click="button_CurtainWallMullions_Click"
+                Content="幕墙竖梃" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_CurtaSystem" Click="button_CurtaSystem_Click"
+                Content="幕墙系统" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+
+        </StackPanel>
+
+        <!--设置 机电-->
+        <StackPanel Margin="0" Grid.RowSpan="2" Grid.Column="1">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFBFFE0" Offset="0.995"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="机电" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" 
+                   HorizontalContentAlignment="Center" Foreground="Black" Grid.Column="1" Margin="0" FontWeight="Bold" IsEnabled="False">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="White" Offset="0.877"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <!--设置 机电 按钮-->
+            <Button Background="White" x:Name="button_OST_PipeCurves" Click="button_OST_PipeCurves_Click"
+                Content="管道" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_DuctCurves" Click="button_OST_DuctCurves_Click"
+                Content="风管" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_CableTray" Click="button_OST_CableTray_Click"
+                Content="桥架" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_Conduit" Click="button_OST_Conduit_Click"
+                Content="线管" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_PipeFitting" Click="button_OST_PipeFitting_Click"
+                Content="管件" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_DuctFitting" Click="button_OST_DuctFitting_Click"
+                Content="风管管件" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_CableTrayFitting" Click="button_OST_CableTrayFitting_Click"
+                Content="桥架配件" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_ConduitFitting" Click="button_OST_ConduitFitting_Click"
+                Content="线管配件" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_MechanicalEquipment" Click="button_OST_MechanicalEquipment_Click"
+                Content="机械设备" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_PlumbingFixtures" Click="button_OST_PlumbingFixtures_Click"
+                Content="卫浴装置" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_Sprinklers" Click="button_OST_Sprinklers_Click"
+                Content="喷头" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_ElectricalEquipment" Click="button_OST_ElectricalEquipment_Click"
+                Content="电器设备" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_LightingFixtures" Click="button_OST_LightingFixtures_Click"
+                Content="照明设备" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_PipeAccessory" Click="button_OST_PipeAccessory_Click"
+                Content="管道附件" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_DuctAccessory" Click="button_OST_DuctAccessory_Click"
+                Content="风管附件" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_FlexPipeCurves" Click="button_OST_FlexPipeCurves_Click"
+                Content="软管" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_FlexDuctCurves" Click="button_OST_FlexDuctCurves_Click"
+                Content="软风管" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_DuctTerminal" Click="button_OST_DuctTerminal_Click"
+                Content="风管末端" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_Wire" Click="button_OST_Wire_Click"
+                Content="导线" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+
+        </StackPanel>
+
+        <!--设置 标签-->
+        <StackPanel Grid.Column="2" Margin="0" Width="98" Grid.RowSpan="2">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFFC8C8" Offset="0.995"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="注释" VerticalAlignment="Top" FontSize="16" VerticalContentAlignment="Center" 
+                   HorizontalContentAlignment="Center" Foreground="Black" Margin="0" Grid.Column="2" FontWeight="Bold" IsEnabled="False">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="White" Offset="0.877"/>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <!--设置 标签 按钮-->
+            <Button Background="White" x:Name="button_OST_Levels" Click="button_OST_Levels_Click"
+                Content="标高" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_Grids" Click="button_OST_Grids_Click"
+                Content="轴网" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_Sections" Click="button_OST_Sections_Click"
+                Content="剖面" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_CLines" Click="button_OST_CLines_Click"
+                Content="参照平面" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_TextNotes" Click="button_OST_TextNotes_Click"
+                Content="文字注释" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_SpotSlopes" Click="button_OST_SpotSlopes_Click"
+                Content="坡度" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_SpotElevations" Click="button_OST_SpotElevations_Click"
+                Content="高程点" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_Dimensions" Click="button_OST_Dimensions_Click"
+                Content="尺寸标注" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_RevisionClouds" Click="button_OST_RevisionClouds_Click"
+                Content="云线批注" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_DoorTags" Click="button_OST_DoorTags_Click"
+                Content="门标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_WindowTags" Click="button_OST_WindowTags_Click"
+                Content="窗标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_FloorTags" Click="button_OST_FloorTags_Click"
+                Content="楼板标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_CurtainWallPanelTags" Click="button_OST_CurtainWallPanelTags_Click"
+                Content="嵌板标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_PipeTags" Click="button_OST_PipeTags_Click"
+                Content="管道标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_DuctTags" Click="button_OST_DuctTags_Click"
+                Content="风管标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_CableTrayTags" Click="button_OST_CableTrayTags_Click"
+                Content="桥架标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_ConduitTags" Click="button_OST_ConduitTags_Click"
+                Content="线管标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_MaterialTags" Click="button_OST_MaterialTags_Click"
+                Content="材质标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+            <Button Background="White" x:Name="button_OST_AreaTags" Click="button_OST_AreaTags_Click"
+                Content="面积标记" FontSize="14" Height="24" Margin="10,5,10,0" VerticalAlignment="Center" />
+
+        </StackPanel>
+
+        <!--全部显示 关闭-->
+
+        <Button x:Name="Button_ShowAll_AS" Content="显示建筑"  Click="Button_ShowAll_AS_Click" Margin="10,0,10,10" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Height="24" VerticalAlignment="Bottom" Background="Orange" FontWeight="Bold"/>
+        <Button x:Name="Button_ShowNothing_AS" Content="隐藏建筑"  Click="Button_ShowNothing_AS_Click" Margin="10,10,10,0" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Height="24" VerticalAlignment="Top" Background="White" FontWeight="Bold"/>
+        <Button x:Name="Button_ShowAll_MEP" Content="显示机电"  Click="Button_ShowAll_MEP_Click" Margin="10,0,10,10" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Height="24" VerticalAlignment="Bottom" Grid.Column="1" Background="Orange" FontWeight="Bold"/>
+        <Button x:Name="Button_ShowNothing_MEP" Content="隐藏机电"  Click="Button_ShowNothing_MEP_Click" Margin="10,10,10,0" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Height="24" VerticalAlignment="Top" Grid.Column="1" Background="White" FontWeight="Bold"/>
+        <Button x:Name="Button_ShowAll_TAG" Content="显示注释"  Click="Button_ShowAll_TAG_Click" Margin="10,0,10,10" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Height="24" VerticalAlignment="Bottom" Grid.Column="2" Background="Orange" FontWeight="Bold"/>
+        <Button x:Name="Button_ShowNothing_TAG" Content="隐藏注释"  Click="Button_ShowNothing_TAG_Click" Margin="10,10,10,0"  FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Row="1" Height="24" VerticalAlignment="Top" Grid.Column="2" Background="White" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

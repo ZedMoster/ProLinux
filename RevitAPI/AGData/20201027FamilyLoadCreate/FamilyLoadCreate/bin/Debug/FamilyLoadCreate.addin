@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>External Tool</Name>
+    <Assembly>FamilyLoadCreate.dll</Assembly>
+    <ClientId>4ed7c58a-b9d8-4ce4-a6c5-d521da02449d</ClientId>
+    <FullClassName>FamilyLoadCreate.AppEventArgs</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

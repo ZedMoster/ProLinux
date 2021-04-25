@@ -1,0 +1,14 @@
+﻿<Window x:Class="hybh.WPFColorSplasherNo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             mc:Ignorable="d" Height="200" Width="500" Background="#FFF0F0F0" WindowStartupLocation="CenterScreen" MinWidth="500" MinHeight="200" Title="模型审查问题描述" Closed="Window_Closed" WindowStyle="ToolWindow" >
+    <Grid>
+        <Button Content="确定"  Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"  Margin="10,0,10,10" VerticalAlignment="Bottom" Height="24" Click="Button_Click" IsDefault="True" FontSize="14"/>
+        <TextBox x:Name="text" Margin="10,40,10,50" TextWrapping="Wrap" Text="问题：" FontSize="14" TextAlignment="Justify" />
+        <Label Content="标记内容：" Margin="10,5,10,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="14" ToolTip="值会绑定到标识数据中的标记"/>
+
+    </Grid>
+</Window>

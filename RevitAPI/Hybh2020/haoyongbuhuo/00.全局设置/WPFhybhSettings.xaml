@@ -1,0 +1,69 @@
+﻿<Window x:Class="hybh.WPFhybhSettings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             mc:Ignorable="d" Width="181.6" Height="753.249" Title="设置" WindowStartupLocation="CenterScreen" MinWidth="240" MinHeight="450" WindowStyle="ToolWindow">
+    <Grid Background="White">
+        <Button x:Name="OK" Content="保存" Margin="0,0,30,11" Click="OK_Click" IsDefault="True" Height="24" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+        <Button x:Name="NO" Content="取消" Margin="30,0,0,11" Click="NO_Click" IsCancel="True" Height="24" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="70"/>
+        <GridSplitter Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Gray" Margin="0,0,0,45" />
+        <GridSplitter Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="Gray" Margin="0,601,0,0" />
+
+        <GroupBox Header="背景色颜色" Height="90" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200">
+            <Grid Margin="0,3,-1.2,-2.6">
+                <Button x:Name="B0" Content="选择颜色" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="20" Click="B0_Click" Margin="10,9,0,0"/>
+                <Button x:Name="B1" Content="选择颜色" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="20" Margin="10,40,0,0" Click="B1_Click"/>
+                <Button x:Name="B0_color" Content="" Margin="0,9,5,0" VerticalAlignment="Top" Background="White" Height="20" HorizontalAlignment="Right" Width="70" IsTabStop="False" Focusable="False" Click="B0_Click"/>
+                <Button x:Name="B1_color" Content="" Margin="0,40,5,0" VerticalAlignment="Top" Background="Black" Height="20" HorizontalAlignment="Right" Width="70" Focusable="False" IsTabStop="False" Click="B1_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="审查功能颜色" Height="114" Margin="10,108,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200">
+            <Grid Margin="0,3,-1.2,-2.6">
+                <Button x:Name="filter0" Content="审查模型" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="20" Margin="10,9,0,0" Click="Filter0_Click"/>
+                <Button x:Name="filter1" Content="问题模型" HorizontalAlignment="Left" VerticalAlignment="Top" Width="64" Height="20" Margin="10,40,0,0" Click="Filter1_Click"/>
+                <Button x:Name="filter0_color" Content="" Margin="0,9,5,0" VerticalAlignment="Top" Background="White" Height="20" HorizontalAlignment="Right" Width="70" IsTabStop="False" Focusable="False"  Click="Filter0_Click"/>
+                <Button x:Name="filter1_color" Content="" Margin="0,40,5,0" VerticalAlignment="Top" Background="Black" Height="20" HorizontalAlignment="Right" Width="70" Focusable="False" IsTabStop="False" Click="Filter1_Click"/>
+                <CheckBox x:Name="delAllFilter" Content="删除当前视图全部的过滤器" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="174" BorderBrush="Red"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="剖面参数" Height="124" Margin="10,227,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200">
+            <Grid Margin="0,3,-1.2,-2.6">
+                <Label Content="剖面名称：" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="SectionName" Height="24" Margin="0,7,5,0" TextWrapping="Wrap" Text="快剖" VerticalAlignment="Top" VerticalContentAlignment="Center" AutomationProperties.HelpText="构件偏移值默认为：0" Width="70" HorizontalAlignment="Right"/>
+                <Label Content="剖面深度：" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="SectionHeight" Height="24" Margin="0,38,4.2,0" TextWrapping="Wrap" Text="800" VerticalAlignment="Top" VerticalContentAlignment="Center" AutomationProperties.HelpText="构件偏移值默认为：0" HorizontalAlignment="Right" Width="70"/>
+                <Label Content="剖面偏移：" HorizontalAlignment="Left" Margin="11,65,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="SectionOffset" Height="24" Margin="0,67,4.2,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" VerticalContentAlignment="Center" AutomationProperties.HelpText="构件偏移值默认为：0" HorizontalAlignment="Right" Width="70"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="族文件参数名称" Height="152" Margin="10,356,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200">
+            <Grid Margin="0,3,-1.2,-2.6">
+                <Label Content="柱宽参数名称：" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="ColumnB" Height="24" Margin="0,7,5,0" TextWrapping="Wrap" Text="b" VerticalAlignment="Top" VerticalContentAlignment="Center" AutomationProperties.HelpText="输入梁族的高度参数名称，默认为h" HorizontalAlignment="Right" Width="70"/>
+                <Label Content="柱长参数名称：" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="ColumnH" Height="24" Margin="0,36,5,0" TextWrapping="Wrap" Text="h" VerticalAlignment="Top" VerticalContentAlignment="Center" AutomationProperties.HelpText="输入梁族的高度参数名称，默认为h" Width="70" HorizontalAlignment="Right"/>
+                <Label Content="梁高参数名称：" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="BeamH" Height="24" Margin="0,96,5,0" TextWrapping="Wrap" Text="h" VerticalAlignment="Top" VerticalContentAlignment="Center" AutomationProperties.HelpText="输入梁族的高度参数名称，默认为h" HorizontalAlignment="Right" Width="70"/>
+                <Label Content="梁宽参数名称：" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="BeamB" Height="24" Margin="0,65,5,0" TextWrapping="Wrap" Text="b" VerticalAlignment="Top" VerticalContentAlignment="Center" AutomationProperties.HelpText="输入梁族的高度参数名称，默认为h" HorizontalAlignment="Right" Width="70"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="构件偏移值" Height="80" Margin="10,513,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="200">
+            <Grid Margin="0,3,-1.2,-2.6">
+                <Label VerticalAlignment="Top" Margin="10,30,0,0" HorizontalAlignment="Left" Content="构件的偏移值："/>
+                <TextBox Width="70" VerticalContentAlignment="Center" VerticalAlignment="Top" Text="0" TextWrapping="Wrap" x:Name="OffsetValue" Margin="0,30,5,0" Height="24" HorizontalAlignment="Right" AutomationProperties.HelpText="构件偏移值默认为：0"/>
+                <ComboBox x:Name="FloorFace" Margin="0,3,5,0" VerticalAlignment="Top" VerticalContentAlignment="Center" 
+            DisplayMemberPath="key" SelectedValuePath="value" HorizontalAlignment="Right" Width="70" />
+                <Label Content="设置参照板面：" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
+        <ComboBox x:Name="CategoryList" Margin="0,607,24,0" VerticalAlignment="Top" VerticalContentAlignment="Center" 
+                  DisplayMemberPath="key" SelectedValuePath="value" HorizontalAlignment="Right" Width="80" HorizontalContentAlignment="Center" />
+        <Label Content="更新类型名称：" HorizontalAlignment="Left" Margin="16,607,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

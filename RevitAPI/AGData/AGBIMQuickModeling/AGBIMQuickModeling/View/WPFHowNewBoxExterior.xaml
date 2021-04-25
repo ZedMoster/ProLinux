@@ -1,0 +1,38 @@
+﻿<Window x:Class="CADReader.View.WPFHowNewBoxExterior"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignWidth="434.085" d:DesignHeight="341.953"
+             Title="选择图层" Width="400" Height="360" MinWidth="400" MinHeight="360" MaxWidth="400" MaxHeight="360" WindowStartupLocation="CenterScreen" Background="#FFE6E6E6" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="140"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="ShowData" Content="6.完成1~3步骤后确认表格数据" VerticalAlignment="Center" Height="24" Margin="10,10" Click="Show_Click" />
+        <Button x:Name="Pick_1" Content="1.框选建筑明细表" Margin="10,14" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Height="24" Click="Pick_1_Click"/>
+        <Button x:Name="Pick_2" Content="2.选择表文字图层" Margin="10,14" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Height="24" Click="Pick_2_Click"/>
+        <Button x:Name="Pick_3" Content="3.选择表网格图层" Margin="10,14" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Height="24" Click="Pick_3_Click"/>
+        <Button x:Name="Pick_4" Content="4.选择建筑轮廓图层" Margin="10,14" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Height="24" Click="Pick_4_Click"/>
+        <Button x:Name="Pick_5" Content="5.选择建筑编号图层" Margin="10,14" VerticalAlignment="Center" Grid.Row="4" Grid.Column="1" Height="24" Click="Pick_5_Click"/>
+        
+        <TextBox x:Name="Layer_2" IsReadOnly="True" Grid.Column="0" Grid.Row="1" Text="图层名称：" Margin="10,14,14,14" VerticalAlignment="Center" Height="24" VerticalContentAlignment="Center" ToolTip="已选择的图层名称"/>
+        <TextBox x:Name="Layer_3" IsReadOnly="True" Grid.Column="0" Grid.Row="2" Text="图层名称：" Margin="10,14,14,14" VerticalAlignment="Center" Height="24" VerticalContentAlignment="Center" ToolTip="已选择的图层名称"/>
+        <TextBox x:Name="Layer_4" IsReadOnly="True" Grid.Column="0" Grid.Row="3" Text="图层名称：" Margin="10,14,14,14" VerticalAlignment="Center" Height="24" VerticalContentAlignment="Center" ToolTip="已选择的图层名称"/>
+        <TextBox x:Name="Layer_5" IsReadOnly="True" Grid.Column="0" Grid.Row="4" Text="图层名称：" Margin="10,14,14,14" VerticalAlignment="Center" Height="24" VerticalContentAlignment="Center" ToolTip="已选择的图层名称"/>
+
+        <Button x:Name="OK" Content="确认" VerticalAlignment="Center" Height="24" Grid.Row="5" Margin="10,12.6,10,13.8" Grid.Column="1" Click="OK_Click" IsDefault="True"/>
+        <Button x:Name="NO" Content="取消" HorizontalAlignment="Right" VerticalAlignment="Center" Width="100" Height="24" Grid.Row="5" Margin="10" Click="NO_Click" IsCancel="True" />
+        
+    </Grid>
+</Window>

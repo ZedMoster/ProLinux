@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <dictionary category="管点调查表">
+    <key>CODE</key>
+    <value>类型</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>EXP_NO</key>
+    <value>物探点号（管点编号）</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>X</key>
+    <value>X坐标</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>Y</key>
+    <value>Y坐标</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>SUR_H</key>
+    <value>地面高程</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>FEATURE</key>
+    <value>特征</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>SUBSID</key>
+    <value>附属物</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>BUILDDATE</key>
+    <value>埋设日期</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>MAPNUMBER</key>
+    <value>图幅号</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>SDATE</key>
+    <value>物探日期</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>G_Old</key>
+    <value>新旧管线</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>ljm</key>
+    <value>连接码</value>
+  </dictionary>
+  <dictionary category="管点调查表">
+    <key>编号</key>
+    <value>编号</value>
+  </dictionary>
+</root>

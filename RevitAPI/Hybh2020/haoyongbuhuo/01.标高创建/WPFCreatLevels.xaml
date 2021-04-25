@@ -1,0 +1,62 @@
+﻿<Window x:Class="hybh.WPFCreatLevels"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             mc:Ignorable="d" Width="308.714" Height="391.758"  MinHeight="340" MinWidth="240" Title="参数设置" WindowStartupLocation="CenterScreen" Closed="Window_Closed" WindowStyle="ToolWindow">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical">
+            <Label Content="开始标高名称(F/B)：" ToolTip="输入F -- 表示地上标高\n输入B -- 代表地下标高"
+                   Margin="10,10,10,0" VerticalAlignment="Center" Height="30" FontSize="14"/>
+            <TextBox Name="name0" Height="20" Text="F"
+                     Margin="10,0" VerticalAlignment="Center" Background="White"/>
+        </StackPanel>
+        <GridSplitter Grid.Row="0" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FFBEBEBE" Margin="5,0" ></GridSplitter>
+        <GridSplitter Grid.Row="1" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FFBEBEBE" Margin="5,0" ></GridSplitter>
+        <GridSplitter Grid.Row="2" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FFBEBEBE" Margin="5,0" ></GridSplitter>
+        <GridSplitter Grid.Row="3" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FFBEBEBE" Margin="5,0" ></GridSplitter>
+
+        <Label Grid.Row="1" Content="建筑 / 结构:" ToolTip="选择：建筑 -- A 结构--S"
+                Margin="10,0,0,5" VerticalAlignment="Bottom" Height="30" FontSize="14" Width="100" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="AS" Height="21" FontSize="12" Grid.Row="1" Margin="120,0,10,10" VerticalAlignment="Bottom"
+                  DisplayMemberPath="HybhKey" SelectedValuePath="HybhValue" BorderBrush="White" >
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+
+        <TextBox Grid.Row="1" x:Name="name1" Height="20" Text="0"
+                    Margin="120,15,10,0" VerticalAlignment="Top"/>
+        <Label Grid.Row="1" Content="开始标高编号："
+                Margin="10,10,0,0" VerticalAlignment="Top" Height="30" FontSize="14" HorizontalAlignment="Left" Width="103"/>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical">
+            <Label Content="开始标高高程："
+                   Margin="10,10,10,0" VerticalAlignment="Center" Height="30" FontSize="14"/>
+            <TextBox Name="name2" Height="20" Text="0.000"
+                     Margin="10,0" VerticalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Vertical">
+            <Label Content="各层层高值：" ToolTip="支持单层层高输入（mm）\n或者输入标准层层高 * 层数 \n中间采用逗号进行分割"
+                   Margin="10,10,10,0" VerticalAlignment="Center" Height="30" FontSize="14"/>
+            <TextBox Name="name3" Height="20" Text="3600,3000*3,3600"
+                     Margin="10,0" VerticalAlignment="Center" Background="White"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Vertical">
+            <Button Content="确定"
+                    Margin="10" Height="30" FontSize="16" Click="Button_Click" VerticalAlignment="Center" IsDefault="True" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>
+        </StackPanel>
+    </Grid>
+</Window>

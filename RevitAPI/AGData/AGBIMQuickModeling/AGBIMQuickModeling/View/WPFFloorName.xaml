@@ -1,0 +1,64 @@
+﻿<Window x:Class="CADReader.View.WPFFloorName"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Width="300" Height="650" MinWidth="300" MinHeight="650" 
+             Title="区域选择" WindowStartupLocation="CenterScreen" Background="#FFE6E6E6" Closed="Window_Closed" >
+    <Grid>
+        <!--选择楼板类型-->
+        <Label Content="选择创建区域类型名称：" Margin="10" VerticalAlignment="Top" Height="25"/>
+        <ListBox x:Name="ElementList" Margin="10,35,10,50" 
+                  DisplayMemberPath="ElementName" SelectedValuePath="ElementName" Background="White" IsTabStop="True" >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Margin" Value="0,0,0,1"/>
+                    <Setter Property="BorderBrush" Value="Gray"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                        <Border BorderBrush="LightGray" HorizontalAlignment="Left" BorderThickness="1" Background="{Binding Color}" Width="35" Height="15"/>
+                                        <TextBlock Text="{Binding ElementName}" Margin="5,0,0,0" HorizontalAlignment="Left"/>
+                                    </StackPanel>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="BorderBrush" Value="#1690ff"/>
+                            <Setter Property="Foreground" Value="#1690ff"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="BorderBrush" Value="Gray"/>
+                            <Setter Property="Foreground" Value="Gray"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="BorderBrush" Value="#1690ff"/>
+                            <Setter Property="Foreground" Value="#1690ff"/>
+                            <Setter Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        
+        <!--设置参数-->
+        <GridSplitter Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="White" Margin="0,0,0.2,40.2" Grid.ColumnSpan="2" />
+        <!--是否创建-->
+        <Button x:Name="Yes" Content="确认" Margin="0,0,30,10.2" IsDefault="True" Click="Yes_Click" Height="24" 
+                VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="70" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" Grid.Column="1"/>
+        <Button x:Name="No" Content="取消" Margin="30,0,0,10.2" Click="No_Click" Height="24" VerticalAlignment="Bottom"
+                HorizontalAlignment="Left" Width="70" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" IsCancel="True" Grid.Column="1"/>
+    </Grid>
+</Window>

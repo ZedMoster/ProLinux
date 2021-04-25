@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>External Tool</Name>
+    <Assembly>MongoDB.hybh.dll</Assembly>
+    <ClientId>2bb3f99c-6ba9-4a3a-a8f4-4000fae9fbf4</ClientId>
+    <FullClassName>hybh.Hybh2020</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

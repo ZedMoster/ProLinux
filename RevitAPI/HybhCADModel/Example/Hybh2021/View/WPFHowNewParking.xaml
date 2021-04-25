@@ -1,0 +1,30 @@
+﻿<Window x:Class="CADReader.View.WPFHowNewParking"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             Title="参数设置" Width="400" Height="210" MinWidth="400" MinHeight="270" Background="#FFE6E6E6" MaxWidth="400" MaxHeight="270" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="55"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="PickLayer" Content="1.选择停车位定位边线图层图元" Margin="10" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Height="24" Click="PickLayer_Click"/>
+        <TextBox x:Name="BoxLayer" IsReadOnly="True" Grid.Column="0" Text="图层名称：" Margin="10" VerticalAlignment="Center" Height="24" VerticalContentAlignment="Center" ToolTip="已选择的图层名称"/>
+        <Button x:Name="PickFamily" Content="2.选择停车位族类型名称" Margin="10" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Height="24" Click="PickFamily_Click" ToolTip="使用*基于线*的停车位族"/>
+        <TextBox x:Name="BoxFamilyName" IsReadOnly="True" Text="类型名称：" Margin="10" VerticalAlignment="Center" Height="24" VerticalContentAlignment="Center" ToolTip="已选择的图层名称" Grid.Row="1"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="停车位宽:" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left" Height="24"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="停车位长:" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left" Height="24"/>
+        <TextBox x:Name="ParkWidth" Grid.Row="2" Grid.Column="0" Text="2500" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right" Width="110" Height="24" VerticalContentAlignment="Center" PreviewTextInput="ToInput"/>
+        <TextBox x:Name="ParkLengh" Grid.Row="2" Grid.Column="1" Text="5500" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right" Width="110" Height="24" VerticalContentAlignment="Center" PreviewTextInput="ToInput"/>
+        <Button x:Name="OK" Content="确认" VerticalAlignment="Center" Height="24" Grid.Row="3" Margin="10.2,15.8,9.6,15.4" Grid.Column="1" Click="OK_Click" IsDefault="True"/>
+        <Button x:Name="NO" Content="取消" VerticalAlignment="Center" Height="24" Grid.Row="3" Margin="10,15.8,9.8,15.4" Click="NO_Click" IsCancel="True" />
+    </Grid>
+</Window>

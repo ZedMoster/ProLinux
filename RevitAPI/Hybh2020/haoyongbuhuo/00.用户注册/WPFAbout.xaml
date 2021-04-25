@@ -1,0 +1,18 @@
+﻿<Window x:Class="hybh.WPFAbout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             mc:Ignorable="d" Height="300" Width="570" Title="关于" WindowStartupLocation="CenterScreen" Closed="Window_Closed" MinWidth="570" MinHeight="345" MaxWidth="600" MaxHeight="400">
+    <Window.Resources>
+        <BitmapImage x:Key="aboutW" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\ProgramData\Autodesk\ApplicationPlugins\hybh2020.bundle\Contents\2018\Resources\AboutMe.jpg"/>
+        <BitmapImage x:Key="AboutQQ" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\ProgramData\Autodesk\ApplicationPlugins\hybh2020.bundle\Contents\2018\Resources\QQ.jpg"/>
+    </Window.Resources>
+    <Grid>
+        <Label Content="问题反馈请添加QQ群 ^ . ^" HorizontalAlignment="Left" Margin="359,264,0,0" VerticalAlignment="Top" Width="196" VerticalContentAlignment="Center"/>
+        <Label Content="觉得好用请喝个咖啡吧 ：）" HorizontalAlignment="Left" Margin="73,264,0,0" VerticalAlignment="Top" Width="167" VerticalContentAlignment="Center"/>
+        <Image HorizontalAlignment="Left" Height="254" Margin="43,10,0,0" VerticalAlignment="Top" Width="261" Source="{DynamicResource aboutW}"/>
+        <Image HorizontalAlignment="Left" Height="213" Margin="359,22,-30.8,0" VerticalAlignment="Top" Width="235" Source="{DynamicResource AboutQQ}"/>
+    </Grid>
+</Window>

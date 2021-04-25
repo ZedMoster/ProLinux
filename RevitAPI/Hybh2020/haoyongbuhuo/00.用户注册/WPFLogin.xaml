@@ -1,0 +1,24 @@
+﻿<Window x:Class="hybh.WPFLogin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             Height="160" Width="320" ResizeMode="NoResize" Title="用户信息" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Grid>
+        <Label Content="用户名称：" HorizontalAlignment="Left" Margin="18,14,0,0" VerticalAlignment="Top" FontSize="14" Height="30" ToolTip="关注公众号免费注册使用"/>
+        <Label Content="登录密码：" HorizontalAlignment="Left" Margin="18,54,0,0" VerticalAlignment="Top" FontSize="14" Height="30" ToolTip="关注公众号免费注册使用"/>
+
+        <TextBox x:Name="name" Margin="103,14,16.6,0" TextWrapping="Wrap" FontSize="14" Height="28" VerticalAlignment="Top" AutomationProperties.HelpText="输入用户名称...." VerticalContentAlignment="Center" ToolTip="输入用户名称...."/>
+        <PasswordBox x:Name="password" Margin="103,54,16.6,0" VerticalAlignment="Top" Height="28" Password="admin" VerticalContentAlignment="Center"/>
+
+        <Button x:Name="signin" Content="注册" Margin="50,92,0,0" VerticalAlignment="Top" Height="24" FontSize="12" Click="Signin_Click" Width="70" HorizontalAlignment="Left" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>
+        <Button x:Name="login" Content="登录" Margin="0,92,50,0" VerticalAlignment="Top" Height="24" FontSize="12" Click="Login_Click" Width="70" HorizontalAlignment="Right" IsDefault="True" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>
+
+
+
+
+
+
+    </Grid>
+</Window>

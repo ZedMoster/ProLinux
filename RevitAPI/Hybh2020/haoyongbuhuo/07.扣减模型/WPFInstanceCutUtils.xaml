@@ -1,0 +1,28 @@
+﻿<Window x:Class="hybh.WPFInstanceCutUtils"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             Width="150" Height="360" MinWidth="240" MinHeight="360" ResizeMode="NoResize"
+             Title="构件扣减" Closed="Window_Closed" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" >
+    <Grid ToolTip="批量扣减方式：A类 --&gt; B类">
+        <CheckBox Name="toJoin" Content="连接模型" Margin="10,19,120.6,0" VerticalAlignment="Top" FontSize="14" IsChecked="True"/>
+        <CheckBox Name="toCut" Content="剪切空心" Margin="0,19,10,0" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Right"/>
+
+        <ComboBox Name="elementA" Margin="10,85,9.6,0" Height="21" VerticalAlignment="Top" DisplayMemberPath="HybhElName" SelectedValuePath="HybhBuiltInCategory" FontSize="13"/>
+        <ComboBox Name="elementB" Margin="10,144,9.6,0" Height="21" VerticalAlignment="Top" DisplayMemberPath="HybhElName" SelectedValuePath="HybhBuiltInCategory" FontSize="13"/>
+
+        <Label Content="----------------A 类---------------" Margin="0,57,-0.4,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="----------------B 类---------------" Margin="0,111,-0.4,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+
+        <GridSplitter Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Gray" Margin="0,0,-0.4,39.4" />
+        <Button Name="select" Content="确定" Margin="10,0,10,10"  Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"  FontSize="14" Height="24" VerticalAlignment="Bottom" Click="Select_Click" IsDefault="True"/>
+
+        <Label Content="范围设置" Margin="0,182,-0.4,0" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox x:Name="SelectLevel" Margin="10,235,9.6,0" VerticalAlignment="Top" DisplayMemberPath="HybhElName" SelectedValuePath="HybhElement" FontSize="13"/>
+        <CheckBox x:Name="InLevel" Content="指定楼层(墙底部标高)" Margin="10,214,9.6,0" VerticalAlignment="Top" FontSize="13" BorderBrush="Red" IsChecked="True"/>
+        <GridSplitter Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="Gray" Margin="0,0,-0.4,147.4" />
+
+    </Grid>
+</Window>

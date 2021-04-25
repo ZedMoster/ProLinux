@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>好用不火</Name>
+    <Assembly>hybh2018.dll</Assembly>
+    <ClientId>d0210c5d-9ed4-4f9b-a5b4-215e10f6bf23</ClientId>
+    <FullClassName>hybh.hybh2020</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

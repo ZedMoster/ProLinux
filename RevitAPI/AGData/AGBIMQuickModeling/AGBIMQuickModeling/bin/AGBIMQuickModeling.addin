@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+	<Name>规划翻模</Name>
+    <Assembly>Debug\AGBIMQuickModeling.dll</Assembly>
+    <ClientId>fce7f39f-b436-41c3-9e08-f0519a552e12</ClientId>
+    <FullClassName>CADReader.App</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

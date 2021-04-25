@@ -1,0 +1,43 @@
+﻿<Window x:Class="hybh.WPFPickFilter"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             mc:Ignorable="d" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Height="170" Width="420" MinWidth="420" MinHeight="170" MaxHeight="170" MaxWidth="420" ResizeMode="NoResize">
+    <Window.Resources>
+        <SolidColorBrush x:Key="BG-PICK" Color="#FF003C50"/>
+    </Window.Resources>
+    <Grid Margin="0" Background="{DynamicResource BG-PICK}" AllowDrop="True">
+        <Button x:Name="wall" Content="墙" HorizontalAlignment="Left" Margin="17,15,0,0" VerticalAlignment="Top" Width="60" Height="24" Click="Wall_Click" Background="White"/>
+        <Button x:Name="beam" Content="结构梁" HorizontalAlignment="Left" Margin="147,15,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Beam_Click"/>
+        <Button x:Name="floor" Content="楼板" HorizontalAlignment="Left" Margin="82,15,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Floor_Click"/>
+        <Button x:Name="sColumn" Content="结构柱" HorizontalAlignment="Left" Margin="212,15,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="SColumn_Click"/>
+        <Button x:Name="founddation" Content="基础" HorizontalAlignment="Left" Margin="277,15,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Founddation_Click"/>
+        <Button x:Name="genericModel" Content="常规模型" HorizontalAlignment="Left" Margin="342,15,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="GenericModel_Click"/>
+        <Button x:Name="furniture" Content="家具" HorizontalAlignment="Left" Margin="277,73,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Furniture_Click"/>
+        <Button x:Name="grid" Content="轴网" HorizontalAlignment="Left" Margin="17,44,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Grid_Click"/>
+        <Button x:Name="dimensions" Content="标注" HorizontalAlignment="Left" Margin="82,44,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Dimensions_Click"/>
+        <Button x:Name="rooms" Content="房间" HorizontalAlignment="Left" Margin="147,44,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Rooms_Click"/>
+        <Button x:Name="spotElevations" Content="高程点" HorizontalAlignment="Left" Margin="342,44,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="SpotElevations_Click"/>
+        <Button x:Name="areas" Content="面积" HorizontalAlignment="Left" Margin="212,44,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Areas_Click"/>
+        <Button x:Name="areaTags" Content="面积标记" HorizontalAlignment="Left" Margin="277,44,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="AreaTags_Click"/>
+        <Button x:Name="columns" Content="柱" HorizontalAlignment="Left" Margin="17,73,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Columns_Click"/>
+        <Button x:Name="stairsRailing" Content="楼梯" HorizontalAlignment="Left" Margin="82,73,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="StairsRailing_Click"/>
+        <Button x:Name="ceiling" Content="天花板" HorizontalAlignment="Left" Margin="342,73,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Ceiling_Click"/>
+        <Button x:Name="doors" Content="门" HorizontalAlignment="Left" Margin="147,73,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Doors_Click"/>
+        <Button x:Name="windows" Content="窗" HorizontalAlignment="Left" Margin="212,73,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Windows_Click"/>
+        <Button x:Name="pipe" Content="管道" HorizontalAlignment="Left" Margin="17,102,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Pipe_Click"/>
+        <Button x:Name="ductCurves" Content="风管" HorizontalAlignment="Left" Margin="147,102,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="DuctCurves_Click"/>
+        <Button x:Name="cableTray" Content="电缆桥架" HorizontalAlignment="Left" Margin="277,102,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="CableTray_Click"/>
+        <Button x:Name="pipeFitting" Content="管件" HorizontalAlignment="Left" Margin="82,102,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="PipeFitting_Click"/>
+        <Button x:Name="ductFitting" Content="风管管件" HorizontalAlignment="Left" Margin="212,102,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="DuctFitting_Click"/>
+        <Button x:Name="cableTrayFitting" Content="桥架配件" HorizontalAlignment="Left" Margin="342,102,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="CableTrayFitting_Click"/>
+        <Button x:Name="mechanicalEquipment" Content="机械设备" HorizontalAlignment="Left" Margin="17,131,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="MechanicalEquipment_Click"/>
+        <Button x:Name="sprinklers" Content="喷头" HorizontalAlignment="Left" Margin="82,131,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="Sprinklers_Click"/>
+        <Button x:Name="pipeAccessory" Content="管道附件" HorizontalAlignment="Left" Margin="147,131,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="PipeAccessory_Click"/>
+        <Button x:Name="ductAccessory" Content="风管附件" HorizontalAlignment="Left" Margin="212,131,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" Click="DuctAccessory_Click"/>
+        <Button x:Name="electricalEquipment" Content="电气设备" HorizontalAlignment="Left" Margin="277,131,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" RenderTransformOrigin="0.947,0.442" Click="ElectricalEquipment_Click"/>
+        <Button x:Name="lightingFixtures" Content="照明设备" HorizontalAlignment="Left" Margin="342,131,0,0" VerticalAlignment="Top" Width="60" Height="24" Background="White" RenderTransformOrigin="0.947,0.442" Click="LightingFixtures_Click"/>
+    </Grid>
+</Window>

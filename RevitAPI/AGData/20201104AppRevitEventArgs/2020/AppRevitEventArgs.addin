@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>AppEventArgs</Name>
+    <Assembly>AppRevitEventArgs.dll</Assembly>
+    <ClientId>723745d7-ceaf-4d90-b25d-ceea662db75b</ClientId>
+    <FullClassName>AppRevitEventArgs.AppEventArgs</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

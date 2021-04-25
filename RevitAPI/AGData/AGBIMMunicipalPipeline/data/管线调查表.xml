@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <dictionary category="管线调查表">
+    <key>CODE</key>
+    <value>管线类型</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>S_POINT</key>
+    <value>起始点号</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>E_POINT</key>
+    <value>终止点号</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>S_DEEP</key>
+    <value>起点埋深</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>E_DEEP</key>
+    <value>终点埋深</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>S_H</key>
+    <value>起点地面高程</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>E_H</key>
+    <value>终点地面高程</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>MATERIAL</key>
+    <value>材质</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>D_TYPE</key>
+    <value>埋设类型</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>D_S</key>
+    <value>管径或断面尺寸</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>ARRUNITC</key>
+    <value>权属单位</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>BUILDDATE</key>
+    <value>埋设日期</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>CAB_COUNT</key>
+    <value>电缆根数</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>Voltage</key>
+    <value>电压</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>HOLE_NUM</key>
+    <value>总孔数</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>HOLE_USED</key>
+    <value>已用孔数</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>D_DIA</key>
+    <value>套管尺寸（孔径）</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>SDATE</key>
+    <value>探测日期</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>FlowDirect</key>
+    <value>流向</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>PipeLength</key>
+    <value>管线长度</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>G_Old</key>
+    <value>新旧管线</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>G_RC</key>
+    <value>行X列</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>编号</key>
+    <value>编号</value>
+  </dictionary>
+  <dictionary category="管线调查表">
+    <key>ljm</key>
+    <value>连接码</value>
+  </dictionary>
+</root>

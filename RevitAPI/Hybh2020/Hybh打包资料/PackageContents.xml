@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="4.0" AutodeskProduct="Revit" Name="Hybh2020">
+  <CompanyDetails Name="Hybh2020" Url="https://space.bilibili.com/81888284/dynamic" Email="问题请添加QQ加群：17075104" Phone="QQ:1505636116" />
+  <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2016" SeriesMax="R2020" />
+  <Components Description="2016 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2016" SeriesMax="R2016" />
+    <ComponentEntry AppName="hybh-2016" Version="1.0.6" ModuleName="./Contents/2016/NewtonsoftA.addin" AppDescription="HYBH-2016" />
+  </Components>
+  <Components Description="2017 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2017" SeriesMax="R2017" />
+    <ComponentEntry AppName="hybh-2017" Version="2.0.6" ModuleName="./Contents/2017/NewtonsoftA.addin" AppDescription="HYBH-2017" />
+  </Components>
+  <Components Description="2018 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="hybh-2018" Version="3.0.6" ModuleName="./Contents/2018/NewtonsoftA.addin" AppDescription="HYBH-2018" />
+  </Components>
+    <Components Description="2019 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018" />
+    <ComponentEntry AppName="hybh-2019" Version="4.0.6" ModuleName="./Contents/2019/NewtonsoftA.addin" AppDescription="HYBH-2019" />
+  </Components>
+    <Components Description="2020 parts">
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2020" SeriesMax="R2020" />
+    <ComponentEntry AppName="hybh-2020" Version="5.0.6" ModuleName="./Contents/2020/NewtonsoftA.addin" AppDescription="HYBH-2020" />
+  </Components>
+</ApplicationPackage>

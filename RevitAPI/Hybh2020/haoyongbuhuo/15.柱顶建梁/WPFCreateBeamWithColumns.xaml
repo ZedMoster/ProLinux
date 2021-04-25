@@ -1,0 +1,25 @@
+﻿<Window x:Name="梁尺寸" x:Class="hybh.WPFCreateBeamWithColumns"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             mc:Ignorable="d" Height="210" Width="270" WindowStartupLocation="CenterScreen" Title="梁尺寸设置" Background="#FFD8D8D8" Closed="梁尺寸_Closed" MinWidth="270" MinHeight="210" WindowStyle="ToolWindow">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="宽度：" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="50" Height="25"/>
+        <TextBox x:Name="BeamInput_width" Height="24" Margin="60,50,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="300" VerticalContentAlignment="Center"/>
+
+        <Label Content="高度：" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="50" Height="25"/>
+        <TextBox x:Name="BeamInput_heigh" Height="24" Margin="61,90,9,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="600" VerticalContentAlignment="Center"/>
+
+        <Button x:Name="Yes" Content="确定" Margin="10" Grid.Row="1" IsDefault="True" Click="Yes_Click" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>
+        <Label Content="类型：" Margin="10,10,0,0" VerticalAlignment="Top" Width="50" Height="25" HorizontalAlignment="Left"/>
+        <ComboBox Name="tp" Margin="60,10,10,0" VerticalAlignment="Top" DisplayMemberPath="HybhElName" SelectedValuePath="HybhElement" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>

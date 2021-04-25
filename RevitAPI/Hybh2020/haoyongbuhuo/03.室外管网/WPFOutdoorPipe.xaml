@@ -1,0 +1,34 @@
+﻿<Window x:Class="hybh.WPFOutdoorPipe"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:hybh"
+             Height="300" Width="270" Closed="Window_Closed" Title="管段参数设置" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+
+    <Grid Name="MainGrid" >
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Content="选择系统类型：" FontSize="14" Height="28" Grid.Row="0"
+               VerticalAlignment="Top" Margin="0,10,0,0"/>
+        <ComboBox x:Name="PipingSystemBox" Height="26" FontSize="12" Grid.Row="0" 
+                  DisplayMemberPath="HybhElName" SelectedValuePath="HybhElement" VerticalAlignment="Bottom" Margin="10,0,10,6.4" />
+        <Label Content="选择管道类型：" FontSize="14" Height="28" Grid.Row="1"
+               VerticalAlignment="Top" Margin="0,11.6,0,0"/>
+        <ComboBox x:Name="PipeTypeBox" Height="26" FontSize="12" Grid.Row="1" 
+                  DisplayMemberPath="HybhElName" SelectedValuePath="HybhElement" VerticalAlignment="Bottom" Margin="10,0,10,4.8" />
+        <Label Content="输入管道直径：" FontSize="14" Height="28" Grid.Row="2"
+               VerticalAlignment="Top" Margin="0,10.2,0,0"/>
+        <TextBox x:Name="pipeD" Height="26" Grid.Row="2" FontSize="14" VerticalAlignment="Bottom" Margin="10,0,10,5.4"/>
+
+        <GridSplitter Grid.Row="3" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="Gray" Margin="0,15,0,0" />
+        <Button Name="select" Content="选择两个水井族" FontSize="14" Height="24" Grid.Row="3" VerticalAlignment="Bottom" Click="select_Click" Margin="10,0,10,11.4" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>
+
+    </Grid>
+
+</Window>

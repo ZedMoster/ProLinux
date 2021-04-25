@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>App</Name>
+    <Assembly>Debug\CADReader2018.dll</Assembly>
+    <ClientId>4c9b6718-4fb2-427a-9f09-cf386f802706</ClientId>
+    <FullClassName>CADReader.App</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <VendorDescription>Autodesk, www.autodesk.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

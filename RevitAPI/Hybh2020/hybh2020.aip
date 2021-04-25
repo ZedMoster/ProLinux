@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.0" version="17.0" Modules="simple" RootPath="." Language="en" Id="{B4E13799-66C3-4FE0-ABAB-4E0E67E2AF66}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;DigCertStoreComponent;MsiAssemblyComponent;MsiClassComponent;MsiServInstComponent;MsiExtComponent;TilesComponent;MsiOrgComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent;MsiThemeComponent;BackgroundImagesComponent;UpdaterComponent;SerValComponent;MsiInstExSeqComponent;DictionaryComponent;MsiAppSearchComponent;MsiOdbcDataSrcComponent;CPLAppletComponent;ActSyncAppComponent;PreReqComponent;WebApplicationsComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;TilesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREMOVE" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="revit_1.exe" Type="8"/>
+    <ROW Property="Manufacturer" Value="hybh"/>
+    <ROW Property="ProductCode" Value="1033:{F1C08C10-AD08-449A-9B75-23064AB5B7CE} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="hybh"/>
+    <ROW Property="ProductVersion" Value="6.0.1" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{53CC0C32-C6E6-4412-A48D-E98CC5E6BEFA}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Contents_Dir" Directory_Parent="NewFolder_Dir" DefaultDir="Contents"/>
+    <ROW Directory="ExcelExporterImporter_Dir" Directory_Parent="__Dir" DefaultDir="EXCELE~1|ExcelExporterImporter"/>
+    <ROW Directory="Family_Dir" Directory_Parent="__Dir" DefaultDir="Family"/>
+    <ROW Directory="NewFolder_Dir" Directory_Parent="APPDIR" DefaultDir="HYBH20~1.BUN|hybh2020.bundle"/>
+    <ROW Directory="Resources_1_Dir" Directory_Parent="ExcelExporterImporter_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="Resources_2_Dir" Directory_Parent="hhs_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="Resources_Dir" Directory_Parent="__Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="__Dir" Directory_Parent="Contents_Dir" DefaultDir="2018"/>
+    <ROW Directory="hhs_Dir" Directory_Parent="__Dir" DefaultDir="hhs"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="A01316.png" ComponentId="{CA6C0E65-BFE2-428D-99CC-3278E9BE9BBE}" Directory_="Resources_1_Dir" Attributes="0" KeyPath="A01316.png" Type="0"/>
+    <ROW Component="APIDBAPI.dll" ComponentId="{0CAA0149-22CC-47EA-8D94-93144EDD84A7}" Directory_="__Dir" Attributes="256" KeyPath="APIDBAPI.dll"/>
+    <ROW Component="APIInterop.dll" ComponentId="{28BFE430-5C19-4E99-8253-E774767441EB}" Directory_="__Dir" Attributes="256" KeyPath="APIInterop.dll"/>
+    <ROW Component="APIUIAPI.dll" ComponentId="{0507F9E9-C2DA-48BE-957C-43FB1D3269F8}" Directory_="__Dir" Attributes="256" KeyPath="APIUIAPI.dll"/>
+    <ROW Component="APPDIR" ComponentId="{72EDE688-B86A-4B82-AB05-DC4B97C98E9E}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AddInManager.dll" ComponentId="{37236AD3-2D9C-4A96-8548-B323D12765C4}" Directory_="__Dir" Attributes="256" KeyPath="AddInManager.dll"/>
+    <ROW Component="AnalysisAppsDBAPI.dll" ComponentId="{DC5926F4-F9D7-4E3C-ACCA-0E998C7BBB9D}" Directory_="__Dir" Attributes="256" KeyPath="AnalysisAppsDBAPI.dll"/>
+    <ROW Component="ArrayElemsDBAPI.dll" ComponentId="{FE674C34-6F1A-43D3-875E-550676A9EB8F}" Directory_="__Dir" Attributes="256" KeyPath="ArrayElemsDBAPI.dll"/>
+    <ROW Component="AssemblyDBAPI.dll" ComponentId="{33E559C7-342A-40F1-9D8E-4AE78A738B20}" Directory_="__Dir" Attributes="256" KeyPath="AssemblyDBAPI.dll"/>
+    <ROW Component="BIMOnePanelInformation.dll" ComponentId="{E634A5CA-51BF-4E6B-B5B8-DD7170F30EDF}" Directory_="ExcelExporterImporter_Dir" Attributes="0" KeyPath="BIMOnePanelInformation.dll"/>
+    <ROW Component="BouncyCastle.Crypto.dll" ComponentId="{497FD8D3-3921-48F5-BC03-4C34611C2B0A}" Directory_="__Dir" Attributes="0" KeyPath="BouncyCastle.Crypto.dll"/>
+    <ROW Component="BouncyCastle.Crypto.xml" ComponentId="{4C429CF8-9744-4B56-A394-490D28CD6FF4}" Directory_="__Dir" Attributes="0" KeyPath="BouncyCastle.Crypto.xml" Type="0"/>
+    <ROW Component="BuildingSystemsDBAPI.dll" ComponentId="{A2E62FDD-83F8-4705-ADE4-A1F78DF25914}" Directory_="__Dir" Attributes="256" KeyPath="BuildingSystemsDBAPI.dll"/>
+    <ROW Component="BuildingSystemsUIAPI.dll" ComponentId="{340CCE56-389F-41CF-942F-41BC75DC8550}" Directory_="__Dir" Attributes="256" KeyPath="BuildingSystemsUIAPI.dll"/>
+    <ROW Component="ColumnBH.rfa" ComponentId="{633289CD-CC81-4A31-B3F2-C2FC6817912D}" Directory_="Family_Dir" Attributes="0" KeyPath="ColumnBH.rfa" Type="0"/>
+    <ROW Component="Crc32C.NET.dll" ComponentId="{0EDD3868-2BB8-497C-B357-6EC06E19E9AC}" Directory_="__Dir" Attributes="0" KeyPath="Crc32C.NET.dll"/>
+    <ROW Component="CreateSectionParView.dll" ComponentId="{BACB2313-45CD-4467-9EDE-89EE8FFFB2D8}" Directory_="hhs_Dir" Attributes="0" KeyPath="CreateSectionParView.dll"/>
+    <ROW Component="CreateSectionParView.dll_1" ComponentId="{CADF223F-EC3B-4546-961A-73FC60F19EEB}" Directory_="__Dir" Attributes="0" KeyPath="CreateSectionParView.dll_1"/>
+    <ROW Component="CreateSectionVerticalView.dll" ComponentId="{32CC2D43-4BFE-4D60-AFC2-0DF717059093}" Directory_="hhs_Dir" Attributes="0" KeyPath="CreateSectionVerticalView.dll"/>
+    <ROW Component="CreateSectionVerticalView.dll_1" ComponentId="{3F8CD94D-537F-4D24-AEF7-762C10AF8B23}" Directory_="__Dir" Attributes="0" KeyPath="CreateSectionVerticalView.dll_1"/>
+    <ROW Component="CurtainGridFamilyDBAPI.dll" ComponentId="{CE003B3B-9A3D-4497-95DD-B09F6AEF445D}" Directory_="__Dir" Attributes="256" KeyPath="CurtainGridFamilyDBAPI.dll"/>
+    <ROW Component="DBManagedServices.dll" ComponentId="{3AFA2516-50D3-44C5-835B-D862A8BDDD63}" Directory_="__Dir" Attributes="256" KeyPath="DBManagedServices.dll"/>
+    <ROW Component="DPartDBAPI.dll" ComponentId="{40F8D74C-0F2D-4B78-9B60-8F21094D62DF}" Directory_="__Dir" Attributes="256" KeyPath="DPartDBAPI.dll"/>
+    <ROW Component="DesktopMFCAPI.dll" ComponentId="{1EA89138-6C4F-4D7C-8ED3-B53C1C0377EB}" Directory_="__Dir" Attributes="256" KeyPath="DesktopMFCAPI.dll"/>
+    <ROW Component="DetailDBAPI.dll" ComponentId="{EC875E86-A47C-490D-B208-7719DFC3E1F2}" Directory_="__Dir" Attributes="256" KeyPath="DetailDBAPI.dll"/>
+    <ROW Component="DetailUIAPI.dll" ComponentId="{C7F111A5-C2A5-4259-8C3F-EE904AFEAC7D}" Directory_="__Dir" Attributes="256" KeyPath="DetailUIAPI.dll"/>
+    <ROW Component="DnsClient.dll" ComponentId="{622EAD3C-5586-4029-BE2D-D68DB2C446D2}" Directory_="__Dir" Attributes="0" KeyPath="DnsClient.dll"/>
+    <ROW Component="EPPlus.dll" ComponentId="{16706372-A3BD-4333-9EDA-5245FA88E653}" Directory_="ExcelExporterImporter_Dir" Attributes="0" KeyPath="EPPlus.dll"/>
+    <ROW Component="EPPlus.dll_1" ComponentId="{D11716D2-BBA6-4F88-8DA9-DF144E28F8C6}" Directory_="__Dir" Attributes="0" KeyPath="EPPlus.dll_1"/>
+    <ROW Component="EPPlusEnumerable.dll" ComponentId="{84F40FDA-991F-4DF7-BEA5-84E7C46337AA}" Directory_="ExcelExporterImporter_Dir" Attributes="0" KeyPath="EPPlusEnumerable.dll"/>
+    <ROW Component="ElementGroupDBAPI.dll" ComponentId="{5B1A234B-DA08-47FD-A24E-060ED76D4959}" Directory_="__Dir" Attributes="256" KeyPath="ElementGroupDBAPI.dll"/>
+    <ROW Component="EnergyAnalysisDBAPI.dll" ComponentId="{4626B5DF-68E6-42AC-AB50-446C25CC2970}" Directory_="__Dir" Attributes="256" KeyPath="EnergyAnalysisDBAPI.dll"/>
+    <ROW Component="EnergyAnalysisUtilitiesAPI.dll" ComponentId="{5C5F7F4D-8051-4E5B-B697-96EC736B1F7F}" Directory_="__Dir" Attributes="256" KeyPath="EnergyAnalysisUtilitiesAPI.dll"/>
+    <ROW Component="EssentialsDBAPI.dll" ComponentId="{EB22079B-564A-4CDB-907F-3E130B25B348}" Directory_="__Dir" Attributes="256" KeyPath="EssentialsDBAPI.dll"/>
+    <ROW Component="EssentialsUIAPI.dll" ComponentId="{7B338CC2-C3FC-4E3D-858B-12D8495C45F1}" Directory_="__Dir" Attributes="256" KeyPath="EssentialsUIAPI.dll"/>
+    <ROW Component="ExcelExporterImporter.dll" ComponentId="{D28B4882-F8FF-49E0-8BBD-6E1F763FAB3E}" Directory_="ExcelExporterImporter_Dir" Attributes="0" KeyPath="ExcelExporterImporter.dll"/>
+    <ROW Component="FamilyDBAPI.dll" ComponentId="{7F755846-CC89-4E98-B835-3F2E1BD4225F}" Directory_="__Dir" Attributes="256" KeyPath="FamilyDBAPI.dll"/>
+    <ROW Component="Geointerface.dll" ComponentId="{98945E44-D907-499F-B7BE-37EA5A6F4394}" Directory_="__Dir" Attributes="256" KeyPath="Geointerface.dll"/>
+    <ROW Component="GeomUtilAPI.dll" ComponentId="{A11BDB9E-0584-40CD-AD45-E601E9738432}" Directory_="__Dir" Attributes="256" KeyPath="GeomUtilAPI.dll"/>
+    <ROW Component="Gma.System.MouseKeyHook.dll" ComponentId="{A6D220D0-5ED1-40D5-9FA3-E815BD74D6FA}" Directory_="__Dir" Attributes="0" KeyPath="Gma.System.MouseKeyHook.dll"/>
+    <ROW Component="GraphicsAPI.dll" ComponentId="{19FFA7D8-3F22-4815-831A-8A29E7C6BA98}" Directory_="__Dir" Attributes="256" KeyPath="GraphicsAPI.dll"/>
+    <ROW Component="HostObjDBAPI.dll" ComponentId="{5BD0D959-8983-411B-8141-416C04AC3540}" Directory_="__Dir" Attributes="256" KeyPath="HostObjDBAPI.dll"/>
+    <ROW Component="ICSharpCode.SharpZipLib.dll" ComponentId="{16181B9D-B32D-4E9E-8D36-FFB24A584BF0}" Directory_="__Dir" Attributes="0" KeyPath="ICSharpCode.SharpZipLib.dll"/>
+    <ROW Component="InterfaceAPI.dll" ComponentId="{9C6138BA-FF85-4CC3-A1C6-BFBCFBC327A2}" Directory_="__Dir" Attributes="256" KeyPath="InterfaceAPI.dll"/>
+    <ROW Component="InterfaceUtilAPI.dll" ComponentId="{4ECB5DAA-1AA8-4231-887A-E2AF6FD1E5E5}" Directory_="__Dir" Attributes="256" KeyPath="InterfaceUtilAPI.dll"/>
+    <ROW Component="ManagedMC3.dll" ComponentId="{F41F7903-AD6D-4170-B90C-CD38D769B5F7}" Directory_="__Dir" Attributes="256" KeyPath="ManagedMC3.dll"/>
+    <ROW Component="MassingDBAPI.dll" ComponentId="{A7D2965F-DD10-466B-B370-14F89D38B421}" Directory_="__Dir" Attributes="256" KeyPath="MassingDBAPI.dll"/>
+    <ROW Component="MongoDB.Bson.dll" ComponentId="{898A59FB-783E-4504-B92D-956E4C26B7C4}" Directory_="__Dir" Attributes="0" KeyPath="MongoDB.Bson.dll"/>
+    <ROW Component="MongoDB.Driver.Core.dll" ComponentId="{5A29963B-2995-4E95-818F-59C0F586502A}" Directory_="__Dir" Attributes="0" KeyPath="MongoDB.Driver.Core.dll"/>
+    <ROW Component="MongoDB.Driver.dll" ComponentId="{5B9D5CFC-AD47-40CB-A150-963C12E3A825}" Directory_="__Dir" Attributes="0" KeyPath="MongoDB.Driver.dll"/>
+    <ROW Component="MongoDB.Libmongocrypt.dll" ComponentId="{A7635F8B-17AD-4BE1-B6D7-FDDE2616F815}" Directory_="__Dir" Attributes="0" KeyPath="MongoDB.Libmongocrypt.dll"/>
+    <ROW Component="MongoDB.hybh.dll" ComponentId="{1699FECC-4A86-4F92-A060-B3E8397FA572}" Directory_="__Dir" Attributes="256" KeyPath="MongoDB.hybh.dll"/>
+    <ROW Component="NPOI.OOXML.dll" ComponentId="{8B2A509F-05B8-4031-B419-E4B2F479C462}" Directory_="__Dir" Attributes="0" KeyPath="NPOI.OOXML.dll"/>
+    <ROW Component="NPOI.OpenXml4Net.dll" ComponentId="{A0AC0179-E7D1-4351-9C06-1DC32A4D7006}" Directory_="__Dir" Attributes="0" KeyPath="NPOI.OpenXml4Net.dll"/>
+    <ROW Component="NPOI.OpenXmlFormats.dll" ComponentId="{B5B25DC3-5A99-435B-BC71-72B4FBBFB12A}" Directory_="__Dir" Attributes="0" KeyPath="NPOI.OpenXmlFormats.dll"/>
+    <ROW Component="NPOI.dll" ComponentId="{473E6CAB-8532-40DA-8B39-A24FDB7483AB}" Directory_="__Dir" Attributes="0" KeyPath="NPOI.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{DADEF740-010E-4DF6-BF05-4E263A623A58}" Directory_="__Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="NumberingDBAPI.dll" ComponentId="{AEE3A33B-8D25-492A-8A16-9B08054FBA17}" Directory_="__Dir" Attributes="256" KeyPath="NumberingDBAPI.dll"/>
+    <ROW Component="Ookii.Dialogs.Wpf.dll" ComponentId="{35EFADC8-620A-4636-8552-0A128668C1A4}" Directory_="ExcelExporterImporter_Dir" Attributes="0" KeyPath="Ookii.Dialogs.Wpf.dll"/>
+    <ROW Component="PackageContents.xml" ComponentId="{7DC767AA-6102-43B8-90A1-E4968E2AFAF3}" Directory_="NewFolder_Dir" Attributes="0" KeyPath="PackageContents.xml_1" Type="0"/>
+    <ROW Component="PersistenceDBAPI.dll" ComponentId="{0F1419D0-1ACD-4594-A46F-E58490AA0202}" Directory_="__Dir" Attributes="256" KeyPath="PersistenceDBAPI.dll"/>
+    <ROW Component="PinYinConverterCore.dll" ComponentId="{BE13A5EE-309E-464F-859E-135D4BDD78F0}" Directory_="__Dir" Attributes="0" KeyPath="PinYinConverterCore.dll"/>
+    <ROW Component="PointCloudAccessAPI.dll" ComponentId="{BAC7F464-DF18-46B1-B2C5-3CEBA5DA84C9}" Directory_="__Dir" Attributes="256" KeyPath="PointCloudAccessAPI.dll"/>
+    <ROW Component="PresentationCore.dll" ComponentId="{100711A5-4727-42A8-9820-A45D1BEA5B97}" Directory_="__Dir" Attributes="0" KeyPath="PresentationCore.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{39DB5786-8B9B-4ED3-8C93-D1CB04744588}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="QQ16.png" ComponentId="{9A9AB746-930D-4595-88B7-D29066BFCED2}" Directory_="Resources_2_Dir" Attributes="0" KeyPath="QQ16.png_1" Type="0"/>
+    <ROW Component="Readme.txt" ComponentId="{3FDB5EBF-FD06-45C1-9E7D-02E4056F3FB6}" Directory_="Contents_Dir" Attributes="0" KeyPath="Readme.txt" Type="0"/>
+    <ROW Component="RebarDBAPI.dll" ComponentId="{C94EE971-E77F-4A34-9BD6-607132BEBF0E}" Directory_="__Dir" Attributes="256" KeyPath="RebarDBAPI.dll"/>
+    <ROW Component="RevitAPI.dll" ComponentId="{017C699F-DBEB-40B6-A69D-FFBA4F4F8848}" Directory_="__Dir" Attributes="256" KeyPath="RevitAPI.dll"/>
+    <ROW Component="RevitAPIFoundation.dll" ComponentId="{6247A796-BEC2-4019-93DC-3512136F8AE1}" Directory_="__Dir" Attributes="256" KeyPath="RevitAPIFoundation.dll"/>
+    <ROW Component="RevitAPIUI.dll" ComponentId="{2C56D558-065E-4D3C-AFC4-57E665C485FB}" Directory_="__Dir" Attributes="256" KeyPath="RevitAPIUI.dll"/>
+    <ROW Component="RevitAddInUtility.dll" ComponentId="{EB348402-D2C2-4A0E-AE8B-F66FDC12A74E}" Directory_="__Dir" Attributes="0" KeyPath="RevitAddInUtility.dll"/>
+    <ROW Component="RevitDBAPI.dll" ComponentId="{704B8268-DA40-4472-850D-A0AA9936D21B}" Directory_="__Dir" Attributes="256" KeyPath="RevitDBAPI.dll"/>
+    <ROW Component="RevitMFCAPI.dll" ComponentId="{5CF38F6C-185A-4452-BF28-A9E76AE77853}" Directory_="__Dir" Attributes="256" KeyPath="RevitMFCAPI.dll"/>
+    <ROW Component="RevitUIAPI.dll" ComponentId="{C8558B47-AADC-42A6-8B6F-235A462D5805}" Directory_="__Dir" Attributes="256" KeyPath="RevitUIAPI.dll"/>
+    <ROW Component="RoomAreaPlanDBAPI.dll" ComponentId="{57F16F1E-EF23-4D9E-AD34-2329D369C442}" Directory_="__Dir" Attributes="256" KeyPath="RoomAreaPlanDBAPI.dll"/>
+    <ROW Component="SculptingDBAPI.dll" ComponentId="{9F157211-1B86-4EC1-882C-FDCE60E85114}" Directory_="__Dir" Attributes="256" KeyPath="SculptingDBAPI.dll"/>
+    <ROW Component="SiteDBAPI.dll" ComponentId="{1949D79C-BD5E-41A0-ABDD-34402F947265}" Directory_="__Dir" Attributes="256" KeyPath="SiteDBAPI.dll"/>
+    <ROW Component="Snappy.NET.dll" ComponentId="{D6A2F7DE-AEC3-4B6E-9158-E333324CCBEE}" Directory_="__Dir" Attributes="0" KeyPath="Snappy.NET.dll"/>
+    <ROW Component="StairRampDBAPI.dll" ComponentId="{C3D24DBC-501D-45FB-8876-CDD3E56389B7}" Directory_="__Dir" Attributes="256" KeyPath="StairRampDBAPI.dll"/>
+    <ROW Component="StructuralAnalysisDBAPI.dll" ComponentId="{BC4D0515-8876-478F-8C99-144577EFA23C}" Directory_="__Dir" Attributes="256" KeyPath="StructuralAnalysisDBAPI.dll"/>
+    <ROW Component="StructuralDBAPI.dll" ComponentId="{F1955CE1-84C6-41B6-B752-65E1F677D13C}" Directory_="__Dir" Attributes="256" KeyPath="StructuralDBAPI.dll"/>
+    <ROW Component="System.IO.dll" ComponentId="{0C166E5E-9BFA-4501-82DD-0A4B36CBB6B4}" Directory_="__Dir" Attributes="0" KeyPath="System.IO.dll"/>
+    <ROW Component="System.Memory.dll" ComponentId="{18810B60-5EE6-4ABA-B33E-E35870B0A9B4}" Directory_="__Dir" Attributes="0" KeyPath="System.Memory.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{4328DF41-CC7F-4732-AD47-A1398D2F66B3}" Directory_="__Dir" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{97EDCE3A-32E5-4D1D-9AD0-023E15059921}" Directory_="__Dir" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{57A790CA-649B-4E33-887C-1C66DB3BFFFC}" Directory_="__Dir" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Component="System.Runtime.InteropServices.RuntimeInformation.dll" ComponentId="{A8CCC54F-B185-4945-B90E-9DD83D741EB9}" Directory_="__Dir" Attributes="0" KeyPath="System.Runtime.InteropServices.RuntimeInformation.dll"/>
+    <ROW Component="System.Runtime.dll" ComponentId="{CA5BEFCF-A24E-47D2-A88D-BB8E8CC71D35}" Directory_="__Dir" Attributes="0" KeyPath="System.Runtime.dll"/>
+    <ROW Component="System.Security.Cryptography.Algorithms.dll" ComponentId="{9E814F42-E8CC-4236-AF9C-364DAB51C02E}" Directory_="__Dir" Attributes="0" KeyPath="System.Security.Cryptography.Algorithms.dll"/>
+    <ROW Component="System.Security.Cryptography.Encoding.dll" ComponentId="{B11FDBB8-772A-44C3-9853-CF1950CB6859}" Directory_="__Dir" Attributes="0" KeyPath="System.Security.Cryptography.Encoding.dll"/>
+    <ROW Component="System.Security.Cryptography.Primitives.dll" ComponentId="{4EA676C9-A109-432F-9131-75B38286374F}" Directory_="__Dir" Attributes="0" KeyPath="System.Security.Cryptography.Primitives.dll"/>
+    <ROW Component="System.Security.Cryptography.X509Certificates.dll" ComponentId="{B69C0B67-EE79-4BAC-946C-803448C75152}" Directory_="__Dir" Attributes="0" KeyPath="System.Security.Cryptography.X509Certificates.dll"/>
+    <ROW Component="UIAutomationProvider.dll" ComponentId="{CD6A55EB-C0BF-4B10-82EA-404E863C8BF7}" Directory_="__Dir" Attributes="0" KeyPath="UIAutomationProvider.dll"/>
+    <ROW Component="UIFramework.dll" ComponentId="{D100E127-6C06-4216-88FB-69C815407188}" Directory_="__Dir" Attributes="256" KeyPath="UIFramework.dll"/>
+    <ROW Component="UIFrameworkServices.dll" ComponentId="{F82B41DE-30C4-4103-9445-F0428C115806}" Directory_="__Dir" Attributes="256" KeyPath="UIFrameworkServices.dll"/>
+    <ROW Component="UtilityAPI.dll" ComponentId="{1BFA7DF5-2F14-47B8-A789-D0B038B439BC}" Directory_="__Dir" Attributes="256" KeyPath="UtilityAPI.dll"/>
+    <ROW Component="WindowsBase.dll" ComponentId="{A1F3703F-FBE0-4258-8DEA-4B30D2E7BFCC}" Directory_="__Dir" Attributes="0" KeyPath="WindowsBase.dll"/>
+    <ROW Component="WindowsFormsIntegration.dll" ComponentId="{D4BE9ACE-3A8D-4E23-A928-33238029B66E}" Directory_="__Dir" Attributes="0" KeyPath="WindowsFormsIntegration.dll"/>
+    <ROW Component="XML.dll" ComponentId="{C63F7E97-812A-4A2C-BB60-ABEEB45BB265}" Directory_="__Dir" Attributes="256" KeyPath="XML.dll"/>
+    <ROW Component="Xceed.Wpf.AvalonDock.dll" ComponentId="{5FF679FB-C333-41B6-869F-8C9DE5B5FE62}" Directory_="__Dir" Attributes="0" KeyPath="Xceed.Wpf.AvalonDock.dll"/>
+    <ROW Component="errors.log" ComponentId="{39C3A681-D4DC-4A3C-B4D7-72ADB90FAB97}" Directory_="ExcelExporterImporter_Dir" Attributes="0" KeyPath="errors.log" Type="0"/>
+    <ROW Component="hybh2020.dll" ComponentId="{3DEE6172-A729-426B-B739-D2339D585EDA}" Directory_="__Dir" Attributes="0" KeyPath="hybh2020.dll"/>
+    <ROW Component="libzstd.dll" ComponentId="{43F357FE-D840-4101-A584-62B56D9F32C5}" Directory_="__Dir" Attributes="256" KeyPath="libzstd.dll"/>
+    <ROW Component="log4net.dll" ComponentId="{40296933-1E35-4A9B-B93F-6D7EB959F98F}" Directory_="ExcelExporterImporter_Dir" Attributes="0" KeyPath="log4net.dll"/>
+    <ROW Component="mongocrypt.dll" ComponentId="{AF98DDDB-1E99-4A89-96B7-DE388951C1F5}" Directory_="__Dir" Attributes="256" KeyPath="mongocrypt.dll"/>
+    <ROW Component="parView16.png" ComponentId="{44E3D8A7-71AB-4212-B7F3-DB863E110048}" Directory_="hhs_Dir" Attributes="0" KeyPath="parView16.png" Type="0"/>
+    <ROW Component="png" ComponentId="{64CCA4DA-BC0E-40C8-AF85-06D251E1AF5B}" Directory_="Resources_Dir" Attributes="0" KeyPath="png" Type="0"/>
+    <ROW Component="snappy32.dll" ComponentId="{49A837BC-3C0B-4B71-A0B6-0D02977B07CF}" Directory_="__Dir" Attributes="0" KeyPath="snappy32.dll"/>
+    <ROW Component="snappy64.dll" ComponentId="{D4A1DB39-17B5-4FA0-8C6C-0919702A3BA4}" Directory_="__Dir" Attributes="256" KeyPath="snappy64.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="PackageContents.xml_1" Component_="PackageContents.xml" FileName="PACKAG~1.XML|PackageContents.xml" Attributes="0" SourcePath="打包资料\PackageContents.xml" SelfReg="false"/>
+    <ROW File="Readme.txt" Component_="Readme.txt" FileName="Readme.txt" Attributes="0" SourcePath="打包资料\Contents\Readme.txt" SelfReg="false"/>
+    <ROW File="BIMOnePanelInformation.dll" Component_="BIMOnePanelInformation.dll" FileName="BIMONE~1.DLL|BIMOnePanelInformation.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\BIMOnePanelInformation.dll" SelfReg="false"/>
+    <ROW File="EPPlus.dll" Component_="EPPlus.dll" FileName="EPPlus.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\EPPlus.dll" SelfReg="false"/>
+    <ROW File="EPPlusEnumerable.dll" Component_="EPPlusEnumerable.dll" FileName="EPPLUS~1.DLL|EPPlusEnumerable.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\EPPlusEnumerable.dll" SelfReg="false"/>
+    <ROW File="errors.log" Component_="errors.log" FileName="errors.log" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\errors.log" SelfReg="false"/>
+    <ROW File="ExcelExporterImporter.addin" Component_="errors.log" FileName="EXCELE~1.ADD|ExcelExporterImporter.addin" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\ExcelExporterImporter.addin" SelfReg="false"/>
+    <ROW File="ExcelExporterImporter.dll" Component_="ExcelExporterImporter.dll" FileName="EXCELE~1.DLL|ExcelExporterImporter.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\ExcelExporterImporter.dll" SelfReg="false"/>
+    <ROW File="log4net.dll" Component_="log4net.dll" FileName="log4net.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\log4net.dll" SelfReg="false"/>
+    <ROW File="MaterialAssetsSettings.xml" Component_="errors.log" FileName="MATERI~1.XML|MaterialAssetsSettings.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\MaterialAssetsSettings.xml" SelfReg="false"/>
+    <ROW File="Ookii.Dialogs.Wpf.dll" Component_="Ookii.Dialogs.Wpf.dll" FileName="OOKIID~1.DLL|Ookii.Dialogs.Wpf.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\Ookii.Dialogs.Wpf.dll" SelfReg="false"/>
+    <ROW File="ParametersSettings.xml" Component_="errors.log" FileName="PARAME~1.XML|ParametersSettings.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\ParametersSettings.xml" SelfReg="false"/>
+    <ROW File="A01316.png" Component_="A01316.png" FileName="A-013-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\Resources\A-013-16.png" SelfReg="false"/>
+    <ROW File="A013.png" Component_="A01316.png" FileName="A-013.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\Resources\A-013.png" SelfReg="false"/>
+    <ROW File="QQ16.png" Component_="A01316.png" FileName="QQ-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\Resources\QQ-16.png" SelfReg="false"/>
+    <ROW File="QQ.png" Component_="A01316.png" FileName="QQ.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ExcelExporterImporter\Resources\QQ.png" SelfReg="false"/>
+    <ROW File="ColumnBH.rfa" Component_="ColumnBH.rfa" FileName="ColumnBH.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\ColumnBH.rfa" SelfReg="false"/>
+    <ROW File="DuctFitting.rfa" Component_="ColumnBH.rfa" FileName="DUCTFI~1.RFA|DuctFitting.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\DuctFitting.rfa" SelfReg="false"/>
+    <ROW File="MEPCableTrayTags.rfa" Component_="ColumnBH.rfa" FileName="MEPCAB~1.RFA|MEPCableTrayTags.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\MEPCableTrayTags.rfa" SelfReg="false"/>
+    <ROW File="MEPDuctTags.rfa" Component_="ColumnBH.rfa" FileName="MEPDUC~1.RFA|MEPDuctTags.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\MEPDuctTags.rfa" SelfReg="false"/>
+    <ROW File="MEPPipeTags.rfa" Component_="ColumnBH.rfa" FileName="MEPPIP~1.RFA|MEPPipeTags.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\MEPPipeTags.rfa" SelfReg="false"/>
+    <ROW File="OutPipe.rfa" Component_="ColumnBH.rfa" FileName="OutPipe.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\OutPipe.rfa" SelfReg="false"/>
+    <ROW File="PipeAccessoryA.rfa" Component_="ColumnBH.rfa" FileName="PIPEAC~1.RFA|PipeAccessory-A.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\PipeAccessory-A.rfa" SelfReg="false"/>
+    <ROW File="PipeAccessory.rfa" Component_="ColumnBH.rfa" FileName="PIPEAC~2.RFA|PipeAccessory.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\PipeAccessory.rfa" SelfReg="false"/>
+    <ROW File="StructureBeam.rfa" Component_="ColumnBH.rfa" FileName="STRUCT~1.RFA|StructureBeam.rfa" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\StructureBeam.rfa" SelfReg="false"/>
+    <ROW File="StructureColumn.rft" Component_="ColumnBH.rfa" FileName="STRUCT~1.RFT|StructureColumn.rft" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Family\StructureColumn.rft" SelfReg="false"/>
+    <ROW File="CreateSectionParView.dll" Component_="CreateSectionParView.dll" FileName="CREATE~1.DLL|CreateSectionParView.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\CreateSectionParView.dll" SelfReg="false"/>
+    <ROW File="CreateSectionVerticalView.dll" Component_="CreateSectionVerticalView.dll" FileName="CREATE~2.DLL|CreateSectionVerticalView.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\CreateSectionVerticalView.dll" SelfReg="false"/>
+    <ROW File="parView16.png" Component_="parView16.png" FileName="PARVIE~1.PNG|parView-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\parView-16.png" SelfReg="false"/>
+    <ROW File="parView3D.png" Component_="parView16.png" FileName="PARVIE~2.PNG|parView-3D.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\parView-3D.png" SelfReg="false"/>
+    <ROW File="parView.png" Component_="parView16.png" FileName="parView.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\parView.png" SelfReg="false"/>
+    <ROW File="QQ16.png_1" Component_="QQ16.png" FileName="QQ-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\Resources\QQ-16.png" SelfReg="false"/>
+    <ROW File="QQ.png_1" Component_="QQ16.png" FileName="QQ.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\Resources\QQ.png" SelfReg="false"/>
+    <ROW File="VerticalView16.png" Component_="parView16.png" FileName="VERTIC~1.PNG|VerticalView-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\VerticalView-16.png" SelfReg="false"/>
+    <ROW File="VerticalView3D.png" Component_="parView16.png" FileName="VERTIC~2.PNG|VerticalView-3D.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\VerticalView-3D.png" SelfReg="false"/>
+    <ROW File="VerticalView.png" Component_="parView16.png" FileName="VERTIC~3.PNG|VerticalView.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hhs\VerticalView.png" SelfReg="false"/>
+    <ROW File="png" Component_="png" FileName="0-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\0-16.png" SelfReg="false"/>
+    <ROW File="png_1" Component_="png" FileName="0.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\0.png" SelfReg="false"/>
+    <ROW File="A00116.png" Component_="png" FileName="A-001-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-001-16.png" SelfReg="false"/>
+    <ROW File="A001.png" Component_="png" FileName="A-001.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-001.png" SelfReg="false"/>
+    <ROW File="A00416.png" Component_="png" FileName="A-004-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-004-16.png" SelfReg="false"/>
+    <ROW File="A004.png" Component_="png" FileName="A-004.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-004.png" SelfReg="false"/>
+    <ROW File="A00516.png" Component_="png" FileName="A-005-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-005-16.png" SelfReg="false"/>
+    <ROW File="A005.png" Component_="png" FileName="A-005.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-005.png" SelfReg="false"/>
+    <ROW File="A00616.png" Component_="png" FileName="A-006-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-006-16.png" SelfReg="false"/>
+    <ROW File="A006.png" Component_="png" FileName="A-006.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-006.png" SelfReg="false"/>
+    <ROW File="A00716.png" Component_="png" FileName="A-007-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-007-16.png" SelfReg="false"/>
+    <ROW File="A007.png" Component_="png" FileName="A-007.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-007.png" SelfReg="false"/>
+    <ROW File="A00816.png" Component_="png" FileName="A-008-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-008-16.png" SelfReg="false"/>
+    <ROW File="A008.png" Component_="png" FileName="A-008.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-008.png" SelfReg="false"/>
+    <ROW File="A00916.png" Component_="png" FileName="A-009-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-009-16.png" SelfReg="false"/>
+    <ROW File="A009.png" Component_="png" FileName="A-009.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-009.png" SelfReg="false"/>
+    <ROW File="A01016.png" Component_="png" FileName="A-010-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-010-16.png" SelfReg="false"/>
+    <ROW File="A010.png" Component_="png" FileName="A-010.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-010.png" SelfReg="false"/>
+    <ROW File="A01116.png" Component_="png" FileName="A-011-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-011-16.png" SelfReg="false"/>
+    <ROW File="A011.png" Component_="png" FileName="A-011.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-011.png" SelfReg="false"/>
+    <ROW File="A01216.png" Component_="png" FileName="A-012-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-012-16.png" SelfReg="false"/>
+    <ROW File="A012.png" Component_="png" FileName="A-012.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-012.png" SelfReg="false"/>
+    <ROW File="A01316.png_1" Component_="png" FileName="A-013-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-013-16.png" SelfReg="false"/>
+    <ROW File="A013.png_1" Component_="png" FileName="A-013.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-013.png" SelfReg="false"/>
+    <ROW File="A01416.png" Component_="png" FileName="A-014-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-014-16.png" SelfReg="false"/>
+    <ROW File="A014.png" Component_="png" FileName="A-014.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-014.png" SelfReg="false"/>
+    <ROW File="A01516.png" Component_="png" FileName="A-015-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-015-16.png" SelfReg="false"/>
+    <ROW File="A015.png" Component_="png" FileName="A-015.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-015.png" SelfReg="false"/>
+    <ROW File="A01616.png" Component_="png" FileName="A-016-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-016-16.png" SelfReg="false"/>
+    <ROW File="A016.png" Component_="png" FileName="A-016.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-016.png" SelfReg="false"/>
+    <ROW File="A01716.png" Component_="png" FileName="A-017-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-017-16.png" SelfReg="false"/>
+    <ROW File="A017.png" Component_="png" FileName="A-017.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-017.png" SelfReg="false"/>
+    <ROW File="A018.png" Component_="png" FileName="A-018.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\A-018.png" SelfReg="false"/>
+    <ROW File="C00116.png" Component_="png" FileName="C-001-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-001-16.png" SelfReg="false"/>
+    <ROW File="C001.png" Component_="png" FileName="C-001.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-001.png" SelfReg="false"/>
+    <ROW File="C00216.png" Component_="png" FileName="C-002-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-002-16.png" SelfReg="false"/>
+    <ROW File="C002.png" Component_="png" FileName="C-002.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-002.png" SelfReg="false"/>
+    <ROW File="C00316.png" Component_="png" FileName="C-003-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-003-16.png" SelfReg="false"/>
+    <ROW File="C003.png" Component_="png" FileName="C-003.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-003.png" SelfReg="false"/>
+    <ROW File="C00416.png" Component_="png" FileName="C-004-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-004-16.png" SelfReg="false"/>
+    <ROW File="C004.png" Component_="png" FileName="C-004.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-004.png" SelfReg="false"/>
+    <ROW File="C00516.png" Component_="png" FileName="C-005-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-005-16.png" SelfReg="false"/>
+    <ROW File="C005.png" Component_="png" FileName="C-005.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-005.png" SelfReg="false"/>
+    <ROW File="C00616.png" Component_="png" FileName="C-006-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-006-16.png" SelfReg="false"/>
+    <ROW File="C006.png" Component_="png" FileName="C-006.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-006.png" SelfReg="false"/>
+    <ROW File="C00716.png" Component_="png" FileName="C-007-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-007-16.png" SelfReg="false"/>
+    <ROW File="C007.png" Component_="png" FileName="C-007.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-007.png" SelfReg="false"/>
+    <ROW File="C00816.png" Component_="png" FileName="C-008-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-008-16.png" SelfReg="false"/>
+    <ROW File="C008.png" Component_="png" FileName="C-008.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-008.png" SelfReg="false"/>
+    <ROW File="C00916.png" Component_="png" FileName="C-009-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-009-16.png" SelfReg="false"/>
+    <ROW File="C009.png" Component_="png" FileName="C-009.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-009.png" SelfReg="false"/>
+    <ROW File="C01016.png" Component_="png" FileName="C-010-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-010-16.png" SelfReg="false"/>
+    <ROW File="C010.png" Component_="png" FileName="C-010.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-010.png" SelfReg="false"/>
+    <ROW File="C01116.png" Component_="png" FileName="C-011-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-011-16.png" SelfReg="false"/>
+    <ROW File="C011.png" Component_="png" FileName="C-011.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-011.png" SelfReg="false"/>
+    <ROW File="C01216.png" Component_="png" FileName="C-012-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-012-16.png" SelfReg="false"/>
+    <ROW File="C012.png" Component_="png" FileName="C-012.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-012.png" SelfReg="false"/>
+    <ROW File="C01316.png" Component_="png" FileName="C-013-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-013-16.png" SelfReg="false"/>
+    <ROW File="C013.png" Component_="png" FileName="C-013.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-013.png" SelfReg="false"/>
+    <ROW File="C01416.png" Component_="png" FileName="C-014-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-014-16.png" SelfReg="false"/>
+    <ROW File="C014.png" Component_="png" FileName="C-014.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-014.png" SelfReg="false"/>
+    <ROW File="C01516.png" Component_="png" FileName="C-015-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-015-16.png" SelfReg="false"/>
+    <ROW File="C015.png" Component_="png" FileName="C-015.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-015.png" SelfReg="false"/>
+    <ROW File="C01616.png" Component_="png" FileName="C-016-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-016-16.png" SelfReg="false"/>
+    <ROW File="C016.png" Component_="png" FileName="C-016.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-016.png" SelfReg="false"/>
+    <ROW File="C01716.png" Component_="png" FileName="C-017-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-017-16.png" SelfReg="false"/>
+    <ROW File="C017.png" Component_="png" FileName="C-017.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-017.png" SelfReg="false"/>
+    <ROW File="C01816.png" Component_="png" FileName="C-018-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-018-16.png" SelfReg="false"/>
+    <ROW File="C018.png" Component_="png" FileName="C-018.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-018.png" SelfReg="false"/>
+    <ROW File="C01916.png" Component_="png" FileName="C-019-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-019-16.png" SelfReg="false"/>
+    <ROW File="C019.png" Component_="png" FileName="C-019.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\C-019.png" SelfReg="false"/>
+    <ROW File="D00116.png" Component_="png" FileName="D-001-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-001-16.png" SelfReg="false"/>
+    <ROW File="D001.png" Component_="png" FileName="D-001.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-001.png" SelfReg="false"/>
+    <ROW File="D00216.png" Component_="png" FileName="D-002-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-002-16.png" SelfReg="false"/>
+    <ROW File="D002.png" Component_="png" FileName="D-002.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-002.png" SelfReg="false"/>
+    <ROW File="D00316.png" Component_="png" FileName="D-003-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-003-16.png" SelfReg="false"/>
+    <ROW File="D003.png" Component_="png" FileName="D-003.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-003.png" SelfReg="false"/>
+    <ROW File="D00416.png" Component_="png" FileName="D-004-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-004-16.png" SelfReg="false"/>
+    <ROW File="D004.png" Component_="png" FileName="D-004.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-004.png" SelfReg="false"/>
+    <ROW File="D00516.png" Component_="png" FileName="D-005-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-005-16.png" SelfReg="false"/>
+    <ROW File="D005.png" Component_="png" FileName="D-005.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\D-005.png" SelfReg="false"/>
+    <ROW File="debug16.png" Component_="png" FileName="debug-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\debug-16.png" SelfReg="false"/>
+    <ROW File="debug.png" Component_="png" FileName="debug.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\debug.png" SelfReg="false"/>
+    <ROW File="L00016.png" Component_="png" FileName="L-000-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\L-000-16.png" SelfReg="false"/>
+    <ROW File="L000.png" Component_="png" FileName="L-000.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\L-000.png" SelfReg="false"/>
+    <ROW File="L00116.png" Component_="png" FileName="L-001-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\L-001-16.png" SelfReg="false"/>
+    <ROW File="L001.png" Component_="png" FileName="L-001.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\L-001.png" SelfReg="false"/>
+    <ROW File="L00216.png" Component_="png" FileName="L-002-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\L-002-16.png" SelfReg="false"/>
+    <ROW File="L002.png" Component_="png" FileName="L-002.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\L-002.png" SelfReg="false"/>
+    <ROW File="login.jpg" Component_="png" FileName="login.jpg" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\login.jpg" SelfReg="false"/>
+    <ROW File="QQ16.png_2" Component_="png" FileName="QQ-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\QQ-16.png" SelfReg="false"/>
+    <ROW File="QQ.png_2" Component_="png" FileName="QQ.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\QQ.png" SelfReg="false"/>
+    <ROW File="revita.ico" Component_="png" FileName="revit-a.ico" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\revit-a.ico" SelfReg="false"/>
+    <ROW File="revit.ico" Component_="png" FileName="revit.ico" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\revit.ico" SelfReg="false"/>
+    <ROW File="S00116.png" Component_="png" FileName="S-001-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-001-16.png" SelfReg="false"/>
+    <ROW File="S001.png" Component_="png" FileName="S-001.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-001.png" SelfReg="false"/>
+    <ROW File="S00216.png" Component_="png" FileName="S-002-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-002-16.png" SelfReg="false"/>
+    <ROW File="S002.png" Component_="png" FileName="S-002.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-002.png" SelfReg="false"/>
+    <ROW File="S00316.png" Component_="png" FileName="S-003-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-003-16.png" SelfReg="false"/>
+    <ROW File="S003.png" Component_="png" FileName="S-003.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-003.png" SelfReg="false"/>
+    <ROW File="S00416.png" Component_="png" FileName="S-004-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-004-16.png" SelfReg="false"/>
+    <ROW File="S004.png" Component_="png" FileName="S-004.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-004.png" SelfReg="false"/>
+    <ROW File="S00516.png" Component_="png" FileName="S-005-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-005-16.png" SelfReg="false"/>
+    <ROW File="S005.png" Component_="png" FileName="S-005.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-005.png" SelfReg="false"/>
+    <ROW File="S00616.png" Component_="png" FileName="S-006-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-006-16.png" SelfReg="false"/>
+    <ROW File="S006.png" Component_="png" FileName="S-006.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-006.png" SelfReg="false"/>
+    <ROW File="S00716.png" Component_="png" FileName="S-007-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-007-16.png" SelfReg="false"/>
+    <ROW File="S007.png" Component_="png" FileName="S-007.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-007.png" SelfReg="false"/>
+    <ROW File="S00816.png" Component_="png" FileName="S-008-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-008-16.png" SelfReg="false"/>
+    <ROW File="S008.png" Component_="png" FileName="S-008.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-008.png" SelfReg="false"/>
+    <ROW File="S00916.png" Component_="png" FileName="S-009-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-009-16.png" SelfReg="false"/>
+    <ROW File="S009.png" Component_="png" FileName="S-009.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-009.png" SelfReg="false"/>
+    <ROW File="S01016.png" Component_="png" FileName="S-010-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-010-16.png" SelfReg="false"/>
+    <ROW File="S010.png" Component_="png" FileName="S-010.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-010.png" SelfReg="false"/>
+    <ROW File="S01116.png" Component_="png" FileName="S-011-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-011-16.png" SelfReg="false"/>
+    <ROW File="S011.png" Component_="png" FileName="S-011.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-011.png" SelfReg="false"/>
+    <ROW File="S01216.png" Component_="png" FileName="S-012-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-012-16.png" SelfReg="false"/>
+    <ROW File="S012.png" Component_="png" FileName="S-012.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-012.png" SelfReg="false"/>
+    <ROW File="S01316.png" Component_="png" FileName="S-013-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-013-16.png" SelfReg="false"/>
+    <ROW File="S013.png" Component_="png" FileName="S-013.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-013.png" SelfReg="false"/>
+    <ROW File="S01416.png" Component_="png" FileName="S-014-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-014-16.png" SelfReg="false"/>
+    <ROW File="S014.png" Component_="png" FileName="S-014.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-014.png" SelfReg="false"/>
+    <ROW File="S01516.png" Component_="png" FileName="S-015-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-015-16.png" SelfReg="false"/>
+    <ROW File="S015.png" Component_="png" FileName="S-015.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-015.png" SelfReg="false"/>
+    <ROW File="S01616.png" Component_="png" FileName="S-016-16.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-016-16.png" SelfReg="false"/>
+    <ROW File="S016.png" Component_="png" FileName="S-016.png" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Resources\S-016.png" SelfReg="false"/>
+    <ROW File="AddInManager.dll" Component_="AddInManager.dll" FileName="ADDINM~1.DLL|AddInManager.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\AddInManager.dll" SelfReg="false"/>
+    <ROW File="AnalysisAppsDBAPI.dll" Component_="AnalysisAppsDBAPI.dll" FileName="ANALYS~1.DLL|AnalysisAppsDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\AnalysisAppsDBAPI.dll" SelfReg="false"/>
+    <ROW File="APIDBAPI.dll" Component_="APIDBAPI.dll" FileName="APIDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\APIDBAPI.dll" SelfReg="false"/>
+    <ROW File="APIInterop.dll" Component_="APIInterop.dll" FileName="APIINT~1.DLL|APIInterop.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\APIInterop.dll" SelfReg="false"/>
+    <ROW File="APIUIAPI.dll" Component_="APIUIAPI.dll" FileName="APIUIAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\APIUIAPI.dll" SelfReg="false"/>
+    <ROW File="ArrayElemsDBAPI.dll" Component_="ArrayElemsDBAPI.dll" FileName="ARRAYE~1.DLL|ArrayElemsDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ArrayElemsDBAPI.dll" SelfReg="false"/>
+    <ROW File="AssemblyDBAPI.dll" Component_="AssemblyDBAPI.dll" FileName="ASSEMB~1.DLL|AssemblyDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\AssemblyDBAPI.dll" SelfReg="false"/>
+    <ROW File="BouncyCastle.Crypto.dll" Component_="BouncyCastle.Crypto.dll" FileName="BOUNCY~1.DLL|BouncyCastle.Crypto.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\BouncyCastle.Crypto.dll" SelfReg="false"/>
+    <ROW File="BouncyCastle.Crypto.xml" Component_="BouncyCastle.Crypto.xml" FileName="BOUNCY~1.XML|BouncyCastle.Crypto.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\BouncyCastle.Crypto.xml" SelfReg="false"/>
+    <ROW File="BuildingSystemsDBAPI.dll" Component_="BuildingSystemsDBAPI.dll" FileName="BUILDI~1.DLL|BuildingSystemsDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\BuildingSystemsDBAPI.dll" SelfReg="false"/>
+    <ROW File="BuildingSystemsUIAPI.dll" Component_="BuildingSystemsUIAPI.dll" FileName="BUILDI~2.DLL|BuildingSystemsUIAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\BuildingSystemsUIAPI.dll" SelfReg="false"/>
+    <ROW File="Crc32C.NET.dll" Component_="Crc32C.NET.dll" FileName="CRC32C~1.DLL|Crc32C.NET.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Crc32C.NET.dll" SelfReg="false"/>
+    <ROW File="Crc32C.NET.xml" Component_="BouncyCastle.Crypto.xml" FileName="CRC32C~1.XML|Crc32C.NET.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Crc32C.NET.xml" SelfReg="false"/>
+    <ROW File="CreateSectionParView.dll_1" Component_="CreateSectionParView.dll_1" FileName="CREATE~1.DLL|CreateSectionParView.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\CreateSectionParView.dll" SelfReg="false"/>
+    <ROW File="CreateSectionVerticalView.dll_1" Component_="CreateSectionVerticalView.dll_1" FileName="CREATE~2.DLL|CreateSectionVerticalView.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\CreateSectionVerticalView.dll" SelfReg="false"/>
+    <ROW File="CurtainGridFamilyDBAPI.dll" Component_="CurtainGridFamilyDBAPI.dll" FileName="CURTAI~1.DLL|CurtainGridFamilyDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\CurtainGridFamilyDBAPI.dll" SelfReg="false"/>
+    <ROW File="DBManagedServices.dll" Component_="DBManagedServices.dll" FileName="DBMANA~1.DLL|DBManagedServices.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\DBManagedServices.dll" SelfReg="false"/>
+    <ROW File="DesktopMFCAPI.dll" Component_="DesktopMFCAPI.dll" FileName="DESKTO~1.DLL|DesktopMFCAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\DesktopMFCAPI.dll" SelfReg="false"/>
+    <ROW File="DetailDBAPI.dll" Component_="DetailDBAPI.dll" FileName="DETAIL~1.DLL|DetailDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\DetailDBAPI.dll" SelfReg="false"/>
+    <ROW File="DetailUIAPI.dll" Component_="DetailUIAPI.dll" FileName="DETAIL~2.DLL|DetailUIAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\DetailUIAPI.dll" SelfReg="false"/>
+    <ROW File="DnsClient.dll" Component_="DnsClient.dll" FileName="DNSCLI~1.DLL|DnsClient.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\DnsClient.dll" SelfReg="false"/>
+    <ROW File="DnsClient.xml" Component_="BouncyCastle.Crypto.xml" FileName="DNSCLI~1.XML|DnsClient.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\DnsClient.xml" SelfReg="false"/>
+    <ROW File="DPartDBAPI.dll" Component_="DPartDBAPI.dll" FileName="DPARTD~1.DLL|DPartDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\DPartDBAPI.dll" SelfReg="false"/>
+    <ROW File="ElementGroupDBAPI.dll" Component_="ElementGroupDBAPI.dll" FileName="ELEMEN~1.DLL|ElementGroupDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ElementGroupDBAPI.dll" SelfReg="false"/>
+    <ROW File="EnergyAnalysisDBAPI.dll" Component_="EnergyAnalysisDBAPI.dll" FileName="ENERGY~1.DLL|EnergyAnalysisDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\EnergyAnalysisDBAPI.dll" SelfReg="false"/>
+    <ROW File="EnergyAnalysisUtilitiesAPI.dll" Component_="EnergyAnalysisUtilitiesAPI.dll" FileName="ENERGY~2.DLL|EnergyAnalysisUtilitiesAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\EnergyAnalysisUtilitiesAPI.dll" SelfReg="false"/>
+    <ROW File="EPPlus.dll_1" Component_="EPPlus.dll_1" FileName="EPPlus.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\EPPlus.dll" SelfReg="false"/>
+    <ROW File="EPPlus.xml" Component_="BouncyCastle.Crypto.xml" FileName="EPPlus.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\EPPlus.xml" SelfReg="false"/>
+    <ROW File="EssentialsDBAPI.dll" Component_="EssentialsDBAPI.dll" FileName="ESSENT~1.DLL|EssentialsDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\EssentialsDBAPI.dll" SelfReg="false"/>
+    <ROW File="EssentialsUIAPI.dll" Component_="EssentialsUIAPI.dll" FileName="ESSENT~2.DLL|EssentialsUIAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\EssentialsUIAPI.dll" SelfReg="false"/>
+    <ROW File="FamilyDBAPI.dll" Component_="FamilyDBAPI.dll" FileName="FAMILY~1.DLL|FamilyDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\FamilyDBAPI.dll" SelfReg="false"/>
+    <ROW File="Geointerface.dll" Component_="Geointerface.dll" FileName="GEOINT~1.DLL|Geointerface.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Geointerface.dll" SelfReg="false"/>
+    <ROW File="GeomUtilAPI.dll" Component_="GeomUtilAPI.dll" FileName="GEOMUT~1.DLL|GeomUtilAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\GeomUtilAPI.dll" SelfReg="false"/>
+    <ROW File="Gma.System.MouseKeyHook.dll" Component_="Gma.System.MouseKeyHook.dll" FileName="GMASYS~1.DLL|Gma.System.MouseKeyHook.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Gma.System.MouseKeyHook.dll" SelfReg="false"/>
+    <ROW File="GraphicsAPI.dll" Component_="GraphicsAPI.dll" FileName="GRAPHI~1.DLL|GraphicsAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\GraphicsAPI.dll" SelfReg="false"/>
+    <ROW File="HostObjDBAPI.dll" Component_="HostObjDBAPI.dll" FileName="HOSTOB~1.DLL|HostObjDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\HostObjDBAPI.dll" SelfReg="false"/>
+    <ROW File="hybh2020.addin" Component_="BouncyCastle.Crypto.xml" FileName="HYBH20~1.ADD|hybh2020.addin" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hybh2020.addin" SelfReg="false"/>
+    <ROW File="hybh2020.dll" Component_="hybh2020.dll" FileName="hybh2020.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\hybh2020.dll" SelfReg="false"/>
+    <ROW File="ICSharpCode.SharpZipLib.dll" Component_="ICSharpCode.SharpZipLib.dll" FileName="ICSHAR~1.DLL|ICSharpCode.SharpZipLib.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ICSharpCode.SharpZipLib.dll" SelfReg="false"/>
+    <ROW File="ICSharpCode.SharpZipLib.xml" Component_="BouncyCastle.Crypto.xml" FileName="ICSHAR~1.XML|ICSharpCode.SharpZipLib.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ICSharpCode.SharpZipLib.xml" SelfReg="false"/>
+    <ROW File="InterfaceAPI.dll" Component_="InterfaceAPI.dll" FileName="INTERF~1.DLL|InterfaceAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\InterfaceAPI.dll" SelfReg="false"/>
+    <ROW File="InterfaceUtilAPI.dll" Component_="InterfaceUtilAPI.dll" FileName="INTERF~2.DLL|InterfaceUtilAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\InterfaceUtilAPI.dll" SelfReg="false"/>
+    <ROW File="libzstd.dll" Component_="libzstd.dll" FileName="libzstd.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\libzstd.dll" SelfReg="false"/>
+    <ROW File="ManagedMC3.dll" Component_="ManagedMC3.dll" FileName="MANAGE~1.DLL|ManagedMC3.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\ManagedMC3.dll" SelfReg="false"/>
+    <ROW File="MassingDBAPI.dll" Component_="MassingDBAPI.dll" FileName="MASSIN~1.DLL|MassingDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MassingDBAPI.dll" SelfReg="false"/>
+    <ROW File="mongocrypt.dll" Component_="mongocrypt.dll" FileName="MONGOC~1.DLL|mongocrypt.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\mongocrypt.dll" SelfReg="false"/>
+    <ROW File="MongoDB.Bson.dll" Component_="MongoDB.Bson.dll" FileName="MONGOD~1.DLL|MongoDB.Bson.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.Bson.dll" SelfReg="false"/>
+    <ROW File="MongoDB.Bson.xml" Component_="BouncyCastle.Crypto.xml" FileName="MONGOD~1.XML|MongoDB.Bson.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.Bson.xml" SelfReg="false"/>
+    <ROW File="MongoDB.Driver.Core.dll" Component_="MongoDB.Driver.Core.dll" FileName="MONGOD~2.DLL|MongoDB.Driver.Core.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.Driver.Core.dll" SelfReg="false"/>
+    <ROW File="MongoDB.Driver.Core.xml" Component_="BouncyCastle.Crypto.xml" FileName="MONGOD~2.XML|MongoDB.Driver.Core.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.Driver.Core.xml" SelfReg="false"/>
+    <ROW File="MongoDB.Driver.dll" Component_="MongoDB.Driver.dll" FileName="MONGOD~3.DLL|MongoDB.Driver.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.Driver.dll" SelfReg="false"/>
+    <ROW File="MongoDB.Driver.xml" Component_="BouncyCastle.Crypto.xml" FileName="MONGOD~3.XML|MongoDB.Driver.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.Driver.xml" SelfReg="false"/>
+    <ROW File="MongoDB.hybh.addin" Component_="BouncyCastle.Crypto.xml" FileName="MONGOD~1.ADD|MongoDB.hybh.addin" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.hybh.addin" SelfReg="false"/>
+    <ROW File="MongoDB.hybh.dll" Component_="MongoDB.hybh.dll" FileName="MONGOD~4.DLL|MongoDB.hybh.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.hybh_Secure\MongoDB.hybh.dll" SelfReg="false"/>
+    <ROW File="MongoDB.hybh.pdb" Component_="MongoDB.hybh.dll" FileName="MONGOD~1.PDB|MongoDB.hybh.pdb" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.hybh.pdb" SelfReg="false"/>
+    <ROW File="MongoDB.Libmongocrypt.dll" Component_="MongoDB.Libmongocrypt.dll" FileName="MONGOD~5.DLL|MongoDB.Libmongocrypt.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\MongoDB.Libmongocrypt.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.xml" Component_="BouncyCastle.Crypto.xml" FileName="NEWTON~1.XML|Newtonsoft.Json.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Newtonsoft.Json.xml" SelfReg="false"/>
+    <ROW File="NewtonsoftA.addin" Component_="BouncyCastle.Crypto.xml" FileName="NEWTON~1.ADD|NewtonsoftA.addin" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NewtonsoftA.addin" SelfReg="false"/>
+    <ROW File="NPOI.dll" Component_="NPOI.dll" FileName="NPOI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NPOI.dll" SelfReg="false"/>
+    <ROW File="NPOI.OOXML.dll" Component_="NPOI.OOXML.dll" FileName="NPOIOO~1.DLL|NPOI.OOXML.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NPOI.OOXML.dll" SelfReg="false"/>
+    <ROW File="NPOI.OOXML.XML" Component_="BouncyCastle.Crypto.xml" FileName="NPOIOO~1.XML|NPOI.OOXML.XML" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NPOI.OOXML.XML" SelfReg="false"/>
+    <ROW File="NPOI.OpenXml4Net.dll" Component_="NPOI.OpenXml4Net.dll" FileName="NPOIOP~1.DLL|NPOI.OpenXml4Net.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NPOI.OpenXml4Net.dll" SelfReg="false"/>
+    <ROW File="NPOI.OpenXmlFormats.dll" Component_="NPOI.OpenXmlFormats.dll" FileName="NPOIOP~2.DLL|NPOI.OpenXmlFormats.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NPOI.OpenXmlFormats.dll" SelfReg="false"/>
+    <ROW File="NPOI.XML" Component_="BouncyCastle.Crypto.xml" FileName="NPOI.XML" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NPOI.XML" SelfReg="false"/>
+    <ROW File="NumberingDBAPI.dll" Component_="NumberingDBAPI.dll" FileName="NUMBER~1.DLL|NumberingDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\NumberingDBAPI.dll" SelfReg="false"/>
+    <ROW File="PersistenceDBAPI.dll" Component_="PersistenceDBAPI.dll" FileName="PERSIS~1.DLL|PersistenceDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\PersistenceDBAPI.dll" SelfReg="false"/>
+    <ROW File="PinYinConverterCore.dll" Component_="PinYinConverterCore.dll" FileName="PINYIN~1.DLL|PinYinConverterCore.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\PinYinConverterCore.dll" SelfReg="false"/>
+    <ROW File="PointCloudAccessAPI.dll" Component_="PointCloudAccessAPI.dll" FileName="POINTC~1.DLL|PointCloudAccessAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\PointCloudAccessAPI.dll" SelfReg="false"/>
+    <ROW File="PresentationCore.dll" Component_="PresentationCore.dll" FileName="PRESEN~1.DLL|PresentationCore.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\PresentationCore.dll" SelfReg="false"/>
+    <ROW File="RebarDBAPI.dll" Component_="RebarDBAPI.dll" FileName="REBARD~1.DLL|RebarDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RebarDBAPI.dll" SelfReg="false"/>
+    <ROW File="RevitAddInUtility.dll" Component_="RevitAddInUtility.dll" FileName="REVITA~1.DLL|RevitAddInUtility.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitAddInUtility.dll" SelfReg="false"/>
+    <ROW File="RevitAPI.dll" Component_="RevitAPI.dll" FileName="RevitAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitAPI.dll" SelfReg="false"/>
+    <ROW File="RevitAPI.xml" Component_="BouncyCastle.Crypto.xml" FileName="RevitAPI.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitAPI.xml" SelfReg="false"/>
+    <ROW File="RevitAPIFoundation.dll" Component_="RevitAPIFoundation.dll" FileName="REVITA~2.DLL|RevitAPIFoundation.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitAPIFoundation.dll" SelfReg="false"/>
+    <ROW File="RevitAPIUI.dll" Component_="RevitAPIUI.dll" FileName="REVITA~3.DLL|RevitAPIUI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitAPIUI.dll" SelfReg="false"/>
+    <ROW File="RevitAPIUI.xml" Component_="BouncyCastle.Crypto.xml" FileName="REVITA~1.XML|RevitAPIUI.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitAPIUI.xml" SelfReg="false"/>
+    <ROW File="RevitDBAPI.dll" Component_="RevitDBAPI.dll" FileName="REVITD~1.DLL|RevitDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitDBAPI.dll" SelfReg="false"/>
+    <ROW File="RevitMFCAPI.dll" Component_="RevitMFCAPI.dll" FileName="REVITM~1.DLL|RevitMFCAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitMFCAPI.dll" SelfReg="false"/>
+    <ROW File="RevitUIAPI.dll" Component_="RevitUIAPI.dll" FileName="REVITU~1.DLL|RevitUIAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RevitUIAPI.dll" SelfReg="false"/>
+    <ROW File="RoomAreaPlanDBAPI.dll" Component_="RoomAreaPlanDBAPI.dll" FileName="ROOMAR~1.DLL|RoomAreaPlanDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\RoomAreaPlanDBAPI.dll" SelfReg="false"/>
+    <ROW File="SculptingDBAPI.dll" Component_="SculptingDBAPI.dll" FileName="SCULPT~1.DLL|SculptingDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\SculptingDBAPI.dll" SelfReg="false"/>
+    <ROW File="SiteDBAPI.dll" Component_="SiteDBAPI.dll" FileName="SITEDB~1.DLL|SiteDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\SiteDBAPI.dll" SelfReg="false"/>
+    <ROW File="Snappy.NET.dll" Component_="Snappy.NET.dll" FileName="SNAPPY~1.DLL|Snappy.NET.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Snappy.NET.dll" SelfReg="false"/>
+    <ROW File="Snappy.NET.xml" Component_="BouncyCastle.Crypto.xml" FileName="SNAPPY~1.XML|Snappy.NET.xml" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Snappy.NET.xml" SelfReg="false"/>
+    <ROW File="snappy32.dll" Component_="snappy32.dll" FileName="snappy32.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\snappy32.dll" SelfReg="false"/>
+    <ROW File="snappy64.dll" Component_="snappy64.dll" FileName="snappy64.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\snappy64.dll" SelfReg="false"/>
+    <ROW File="StairRampDBAPI.dll" Component_="StairRampDBAPI.dll" FileName="STAIRR~1.DLL|StairRampDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\StairRampDBAPI.dll" SelfReg="false"/>
+    <ROW File="StructuralAnalysisDBAPI.dll" Component_="StructuralAnalysisDBAPI.dll" FileName="STRUCT~1.DLL|StructuralAnalysisDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\StructuralAnalysisDBAPI.dll" SelfReg="false"/>
+    <ROW File="StructuralDBAPI.dll" Component_="StructuralDBAPI.dll" FileName="STRUCT~2.DLL|StructuralDBAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\StructuralDBAPI.dll" SelfReg="false"/>
+    <ROW File="System.IO.dll" Component_="System.IO.dll" FileName="SYSTEM~1.DLL|System.IO.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.IO.dll" SelfReg="false"/>
+    <ROW File="System.Memory.dll" Component_="System.Memory.dll" FileName="SYSTEM~2.DLL|System.Memory.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Memory.dll" SelfReg="false"/>
+    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="SYSTEM~3.DLL|System.Net.Http.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Net.Http.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="System.Numerics.Vectors.dll" FileName="SYSTEM~4.DLL|System.Numerics.Vectors.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Numerics.Vectors.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.dll" Component_="System.Runtime.CompilerServices.Unsafe.dll" FileName="SYSTEM~5.DLL|System.Runtime.CompilerServices.Unsafe.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.dll" Component_="System.Runtime.dll" FileName="SYSTEM~6.DLL|System.Runtime.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Runtime.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.InteropServices.RuntimeInformation.dll" Component_="System.Runtime.InteropServices.RuntimeInformation.dll" FileName="SYSTEM~7.DLL|System.Runtime.InteropServices.RuntimeInformation.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Algorithms.dll" Component_="System.Security.Cryptography.Algorithms.dll" FileName="SYSTEM~8.DLL|System.Security.Cryptography.Algorithms.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Security.Cryptography.Algorithms.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Encoding.dll" Component_="System.Security.Cryptography.Encoding.dll" FileName="SYSTEM~9.DLL|System.Security.Cryptography.Encoding.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Security.Cryptography.Encoding.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Primitives.dll" Component_="System.Security.Cryptography.Primitives.dll" FileName="SYSTE~10.DLL|System.Security.Cryptography.Primitives.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Security.Cryptography.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.X509Certificates.dll" Component_="System.Security.Cryptography.X509Certificates.dll" FileName="SYSTE~11.DLL|System.Security.Cryptography.X509Certificates.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\System.Security.Cryptography.X509Certificates.dll" SelfReg="false"/>
+    <ROW File="UIAutomationProvider.dll" Component_="UIAutomationProvider.dll" FileName="UIAUTO~1.DLL|UIAutomationProvider.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\UIAutomationProvider.dll" SelfReg="false"/>
+    <ROW File="UIFramework.dll" Component_="UIFramework.dll" FileName="UIFRAM~1.DLL|UIFramework.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\UIFramework.dll" SelfReg="false"/>
+    <ROW File="UIFrameworkServices.dll" Component_="UIFrameworkServices.dll" FileName="UIFRAM~2.DLL|UIFrameworkServices.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\UIFrameworkServices.dll" SelfReg="false"/>
+    <ROW File="UtilityAPI.dll" Component_="UtilityAPI.dll" FileName="UTILIT~1.DLL|UtilityAPI.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\UtilityAPI.dll" SelfReg="false"/>
+    <ROW File="WindowsBase.dll" Component_="WindowsBase.dll" FileName="WINDOW~1.DLL|WindowsBase.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\WindowsBase.dll" SelfReg="false"/>
+    <ROW File="WindowsFormsIntegration.dll" Component_="WindowsFormsIntegration.dll" FileName="WINDOW~2.DLL|WindowsFormsIntegration.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\WindowsFormsIntegration.dll" SelfReg="false"/>
+    <ROW File="Xceed.Wpf.AvalonDock.dll" Component_="Xceed.Wpf.AvalonDock.dll" FileName="XCEEDW~1.DLL|Xceed.Wpf.AvalonDock.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\Xceed.Wpf.AvalonDock.dll" SelfReg="false"/>
+    <ROW File="XML.dll" Component_="XML.dll" FileName="XML.dll" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\XML.dll" SelfReg="false"/>
+    <ROW File="XML.pdb" Component_="XML.dll" FileName="XML.pdb" Attributes="0" SourcePath="E:\OneDrive - cqu.edu.cn\MyRevitWithAPI\Hybh2020\haoyongbuhuo\bin\Debug\XML.pdb" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." PackageFileName="hybh_6.0.1" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:C:\ProgramData\Autodesk\ApplicationPlugins"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="PackageContents.xml"/>
+    <ROW Feature_="MainFeature" Component_="BIMOnePanelInformation.dll"/>
+    <ROW Feature_="MainFeature" Component_="EPPlus.dll"/>
+    <ROW Feature_="MainFeature" Component_="EPPlusEnumerable.dll"/>
+    <ROW Feature_="MainFeature" Component_="Readme.txt"/>
+    <ROW Feature_="MainFeature" Component_="errors.log"/>
+    <ROW Feature_="MainFeature" Component_="ExcelExporterImporter.dll"/>
+    <ROW Feature_="MainFeature" Component_="log4net.dll"/>
+    <ROW Feature_="MainFeature" Component_="Ookii.Dialogs.Wpf.dll"/>
+    <ROW Feature_="MainFeature" Component_="A01316.png"/>
+    <ROW Feature_="MainFeature" Component_="ColumnBH.rfa"/>
+    <ROW Feature_="MainFeature" Component_="CreateSectionParView.dll"/>
+    <ROW Feature_="MainFeature" Component_="CreateSectionVerticalView.dll"/>
+    <ROW Feature_="MainFeature" Component_="parView16.png"/>
+    <ROW Feature_="MainFeature" Component_="QQ16.png"/>
+    <ROW Feature_="MainFeature" Component_="png"/>
+    <ROW Feature_="MainFeature" Component_="AddInManager.dll"/>
+    <ROW Feature_="MainFeature" Component_="AnalysisAppsDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="APIDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="APIInterop.dll"/>
+    <ROW Feature_="MainFeature" Component_="APIUIAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="ArrayElemsDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="AssemblyDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="BouncyCastle.Crypto.dll"/>
+    <ROW Feature_="MainFeature" Component_="BouncyCastle.Crypto.xml"/>
+    <ROW Feature_="MainFeature" Component_="BuildingSystemsDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="BuildingSystemsUIAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Crc32C.NET.dll"/>
+    <ROW Feature_="MainFeature" Component_="CreateSectionParView.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="CreateSectionVerticalView.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="CurtainGridFamilyDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="DBManagedServices.dll"/>
+    <ROW Feature_="MainFeature" Component_="DesktopMFCAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="DetailDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="DetailUIAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="DnsClient.dll"/>
+    <ROW Feature_="MainFeature" Component_="DPartDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="ElementGroupDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="EnergyAnalysisDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="EnergyAnalysisUtilitiesAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="EPPlus.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="EssentialsDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="EssentialsUIAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="FamilyDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Geointerface.dll"/>
+    <ROW Feature_="MainFeature" Component_="GeomUtilAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Gma.System.MouseKeyHook.dll"/>
+    <ROW Feature_="MainFeature" Component_="GraphicsAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="HostObjDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="hybh2020.dll"/>
+    <ROW Feature_="MainFeature" Component_="ICSharpCode.SharpZipLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="InterfaceAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="InterfaceUtilAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="libzstd.dll"/>
+    <ROW Feature_="MainFeature" Component_="ManagedMC3.dll"/>
+    <ROW Feature_="MainFeature" Component_="MassingDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="mongocrypt.dll"/>
+    <ROW Feature_="MainFeature" Component_="MongoDB.Bson.dll"/>
+    <ROW Feature_="MainFeature" Component_="MongoDB.Driver.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="MongoDB.Driver.dll"/>
+    <ROW Feature_="MainFeature" Component_="MongoDB.hybh.dll"/>
+    <ROW Feature_="MainFeature" Component_="MongoDB.Libmongocrypt.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="NPOI.dll"/>
+    <ROW Feature_="MainFeature" Component_="NPOI.OOXML.dll"/>
+    <ROW Feature_="MainFeature" Component_="NPOI.OpenXml4Net.dll"/>
+    <ROW Feature_="MainFeature" Component_="NPOI.OpenXmlFormats.dll"/>
+    <ROW Feature_="MainFeature" Component_="NumberingDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="PersistenceDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="PinYinConverterCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="PointCloudAccessAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="PresentationCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="RebarDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="RevitAddInUtility.dll"/>
+    <ROW Feature_="MainFeature" Component_="RevitAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="RevitAPIFoundation.dll"/>
+    <ROW Feature_="MainFeature" Component_="RevitAPIUI.dll"/>
+    <ROW Feature_="MainFeature" Component_="RevitDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="RevitMFCAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="RevitUIAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="RoomAreaPlanDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="SculptingDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="SiteDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Snappy.NET.dll"/>
+    <ROW Feature_="MainFeature" Component_="snappy32.dll"/>
+    <ROW Feature_="MainFeature" Component_="snappy64.dll"/>
+    <ROW Feature_="MainFeature" Component_="StairRampDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="StructuralAnalysisDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="StructuralDBAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Memory.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Http.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.Vectors.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.InteropServices.RuntimeInformation.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Algorithms.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Encoding.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.X509Certificates.dll"/>
+    <ROW Feature_="MainFeature" Component_="UIAutomationProvider.dll"/>
+    <ROW Feature_="MainFeature" Component_="UIFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="UIFrameworkServices.dll"/>
+    <ROW Feature_="MainFeature" Component_="UtilityAPI.dll"/>
+    <ROW Feature_="MainFeature" Component_="WindowsBase.dll"/>
+    <ROW Feature_="MainFeature" Component_="WindowsFormsIntegration.dll"/>
+    <ROW Feature_="MainFeature" Component_="Xceed.Wpf.AvalonDock.dll"/>
+    <ROW Feature_="MainFeature" Component_="XML.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="revit_1.exe" SourcePath="打包资料\Contents\2018\Resources\revit.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
