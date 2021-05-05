@@ -29,14 +29,17 @@ import RevitServices
 from RevitServices.Persistence import DocumentManager
 from RevitServices.Transactions import TransactionManager
 
+# 默认参数
 uiapp = DocumentManager.Instance.CurrentUIApplication
 app = uiapp.Application
 uidoc = uiapp.ActiveUIDocument
 doc = DocumentManager.Instance.CurrentDBDocument
 
+# 手动事务
 TransactionManager.Instance.ForceCloseTransaction()
+# 默认事务
 # TransactionManager.Instance.EnsureInTransaction(doc)
 # TransactionManager.Instance.TransactionTaskDone()
 
-
+# 输出
 OUT = UnwrapElement(IN[0])
