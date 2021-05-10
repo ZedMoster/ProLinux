@@ -112,9 +112,19 @@ namespace HelperExcel
                 }
                 for(int k = 0; k <= rowNames.Count - 1; k++)
                 {
+                    string value = "";
                     ICell cell = row.GetCell(k);
-                    // 获取单元格的值
-                    var value = cell != null ? cell.ToString() : "";
+                    if(cell != null)
+                    {
+                        if(cell.CellType != CellType.Formula)
+                        {
+                            value = cell.ToString();
+                        }
+                        else
+                        {
+                            value = cell.NumericCellValue.ToString();
+                        }
+                    }
                     // 获取列名称及单元格值
                     keyValue.Add(rowNames[k], value);
                 }
