@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
-
+using NPOI.HSSF.UserModel;
+using NPOI.HSSF.Util;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 
@@ -25,11 +26,6 @@ namespace HelperExcel
         /// 表数据
         /// </summary>
         private IWorkbook Workbook { get; set; }
-
-        /// <summary>
-        /// 行数
-        /// </summary>
-        public int RowNumber { get; set; }
 
         /// <summary>
         /// 修改表格单元格数据
@@ -57,8 +53,6 @@ namespace HelperExcel
             {
                 throw new System.Exception($"当前表格中不包含页名称:{sheetname}");
             }
-            // 获取表格最大行数
-            RowNumber = Sheet.LastRowNum;
         }
 
         /// <summary>
@@ -93,8 +87,46 @@ namespace HelperExcel
             {
                 Workbook.Write(fs);
             }
+        }
 
-            //Console.WriteLine("Good job");
+        /// <summary>
+        /// 更改xlsx 表格单元格 颜色
+        /// </summary>
+        /// <param name="row"> 行号(起始:0) 不考虑列名行</param>
+        /// <param name="column"> 列号(起始:0)</param>
+        public void SetColorString(int row, int column = 0)
+        {
+            // 读取当前表数据 删除列名
+            Console.WriteLine(Sheet);
+            var _row = Sheet.GetRow(row + 1);
+            if(_row == null)
+            {
+                throw new Exception("表格行为空");
+            }
+            ICell cell = _row.GetCell(column);
+            if(cell != null)
+            {
+                //创建字体
+                IFont font = Workbook.CreateFont();
+                //红色
+                font.Color = HSSFColor.Red.Index;
+                font.FontHeight = 12;
+                font.FontName = "宋体";
+                font.IsBold = true;
+                //样式
+                ICellStyle style = Workbook.CreateCellStyle();
+                //给样式设置字体
+                style.SetFont(font);
+                style.Alignment = HorizontalAlignment.Center;
+                style.VerticalAlignment = VerticalAlignment.Center;
+                // 更新颜色
+                cell.CellStyle = style;
+            }
+            // 写入文件
+            using(FileStream fs = new FileStream(ExcelPath, FileMode.Create, FileAccess.Write))
+            {
+                Workbook.Write(fs);
+            }
         }
     }
 }
