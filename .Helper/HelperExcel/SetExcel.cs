@@ -94,7 +94,8 @@ namespace HelperExcel
         /// </summary>
         /// <param name="row"> 行号(起始:0) 不考虑列名行</param>
         /// <param name="column"> 列号(起始:0)</param>
-        public void SetColorString(int row, int column = 0)
+        /// <param name="color"> 设置单元格颜色</param>
+        public void SetColorString(int row, int column, CellColor color)
         {
             // 读取当前表数据 删除列名
             Console.WriteLine(Sheet);
@@ -108,11 +109,9 @@ namespace HelperExcel
             {
                 //创建字体
                 IFont font = Workbook.CreateFont();
-                //红色
-                font.Color = HSSFColor.Red.Index;
+                font.Color = color == CellColor.Red ? HSSFColor.Red.Index : HSSFColor.Black.Index;
                 font.FontHeight = 12;
                 font.FontName = "宋体";
-                font.IsBold = true;
                 //样式
                 ICellStyle style = Workbook.CreateCellStyle();
                 //给样式设置字体
@@ -128,5 +127,14 @@ namespace HelperExcel
                 Workbook.Write(fs);
             }
         }
+    }
+
+    /// <summary>
+    /// 单元格颜色
+    /// </summary>
+    public enum CellColor
+    {
+        Red,
+        Black,
     }
 }
