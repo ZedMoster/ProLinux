@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CellColor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadExcel.cs" />
     <Compile Include="SetExcel.cs" />

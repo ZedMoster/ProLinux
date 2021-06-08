@@ -5,7 +5,7 @@ namespace HelperLicense
     /// <summary>
     /// 获取 电脑信息
     /// </summary>
-    class GetMachineCode
+    sealed class GetMachineCode
     {
         /// <summary>
         /// 获取 cpu序列号

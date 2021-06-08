@@ -12,7 +12,11 @@ namespace HelperLog
         /// <param name="filename"> 日志文件名称</param>
         /// <param name="category"> 类别</param>
         /// <param name="variable"></param>
-        public static void Tolog(this string message, string filename = "log_temp", string filetype = ".log", string category = "INFO", string variable = "USERPROFILE")
+        public static void Tolog(this string message,
+            string filename = "log_temp",
+            string filetype = ".log",
+            string category = "INFO",
+            string variable = "USERPROFILE")
         {
             // 缓存文件位置
             var filePath = GetFilePath(filename, variable, filetype);
@@ -22,7 +26,7 @@ namespace HelperLog
                 using(System.IO.StreamWriter sw = new System.IO.StreamWriter(fs))
                 {
                     sw.BaseStream.Seek(0, System.IO.SeekOrigin.End);
-                    sw.WriteLine("{0}--{1}--{2}", category, System.DateTime.Now.ToString("s"), message);
+                    sw.WriteLine("[{0}]  {1}  {2}", System.DateTime.Now.ToString("s"), category, message);
                     sw.Flush();
                 }
             }

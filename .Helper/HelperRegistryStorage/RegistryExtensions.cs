@@ -10,7 +10,7 @@
         public static bool IsNullOrEmpty(this HelperRegistry registry, string key)
         {
             // 空值
-            return string.IsNullOrEmpty(registry.Get(key));
+            return string.IsNullOrWhiteSpace(registry.Get(key));
         }
     }
 }

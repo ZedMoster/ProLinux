@@ -1,0 +1,9 @@
+
+# 更新图纸定位到原点
+# 更新图纸定位到软垫
+t = Transaction(doc, "0")
+t.Start()
+
+el.Location.Point = XYZ.Zero
+
+t.Commit()

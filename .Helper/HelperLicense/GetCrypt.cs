@@ -8,7 +8,7 @@ namespace HelperLicense
     /// <summary>
     /// MD5 加密解密
     /// </summary>
-    class GetCrypt
+    sealed class GetCrypt
     {
         /// <summary>
         /// 创建密钥

@@ -6,7 +6,7 @@ namespace HelperLicense
     /// <summary>
     /// 字符串 压缩解压
     /// </summary>
-    class CompressString
+    sealed class CompressString
     {
         /// <summary>
         /// 压缩字符串

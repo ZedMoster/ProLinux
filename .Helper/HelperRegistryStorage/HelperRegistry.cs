@@ -11,6 +11,7 @@ namespace HelperRegistryStorage
         /// 注册列表分类文件夹
         /// </summary>
         private string Category { get; set; }
+
         /// <summary>
         /// 注册列表二级文件夹
         /// </summary>
@@ -35,19 +36,24 @@ namespace HelperRegistryStorage
         /// <returns> 获取本地注册列表键值对信息\n指定路径下键所对应的值</returns>
         public string Get(string key)
         {
+            // 返回值
+            string value;
+            // 获取注册列表的位置
             RegistryKey registryKey = Registry.CurrentUser.OpenSubKey(GetPath());
-            var getValue = "";
             try
             {
-                getValue = registryKey.GetValue(key).ToString();
-                registryKey.Close();
+                var getValue = registryKey.GetValue(key).ToString();
+                value = getValue;
             }
             catch
             {
-
+                value = "";
             }
-
-            return getValue;
+            finally
+            {
+                registryKey.Close();
+            }
+            return value;
         }
 
         /// <summary>
@@ -56,12 +62,20 @@ namespace HelperRegistryStorage
         /// </summary>
         /// <param name="key"> 键</param>
         /// <param name="value"> 值</param>
-        public void Add(string key, string value)
+        public bool Add(string key, string value)
         {
             // 计算机\HKEY_CURRENT_USER\Software\{input}
-            RegistryKey registryKey = Registry.CurrentUser.CreateSubKey(GetPath());
-            registryKey.SetValue(key, value);
-            registryKey.Close();
+            try
+            {
+                RegistryKey registryKey = Registry.CurrentUser.CreateSubKey(GetPath());
+                registryKey.SetValue(key, value);
+                registryKey.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -70,8 +84,9 @@ namespace HelperRegistryStorage
         /// <returns></returns>
         private string GetPath()
         {
-            var address = string.IsNullOrWhiteSpace(Level) ?
-                System.IO.Path.Combine("Software", Category) : System.IO.Path.Combine("Software", Category, Level);
+            var address = string.IsNullOrWhiteSpace(Level)
+                ? System.IO.Path.Combine("Software", Category)
+                : System.IO.Path.Combine("Software", Category, Level);
             return address;
         }
     }

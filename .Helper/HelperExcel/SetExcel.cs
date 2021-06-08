@@ -128,13 +128,4 @@ namespace HelperExcel
             }
         }
     }
-
-    /// <summary>
-    /// 单元格颜色
-    /// </summary>
-    public enum CellColor
-    {
-        Red,
-        Black,
-    }
 }
