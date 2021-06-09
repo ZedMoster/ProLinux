@@ -36,22 +36,15 @@ namespace HelperRegistryStorage
         /// <returns> 获取本地注册列表键值对信息\n指定路径下键所对应的值</returns>
         public string Get(string key)
         {
-            // 返回值
-            string value;
-            // 获取注册列表的位置
             RegistryKey registryKey = Registry.CurrentUser.OpenSubKey(GetPath());
+            var value = "";
             try
             {
-                var getValue = registryKey.GetValue(key).ToString();
-                value = getValue;
+                value = registryKey.GetValue(key).ToString();
+                registryKey.Close();
             }
             catch
             {
-                value = "";
-            }
-            finally
-            {
-                registryKey.Close();
             }
             return value;
         }
