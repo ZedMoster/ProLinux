@@ -26,35 +26,26 @@ namespace HelperExcel
         }
 
         /// <summary>
-        /// 读取excel获取DataTable
+        /// 获取指定页的 DataTable
         /// </summary>
-        /// <returns> 读取excel 数据，返回 Dictionary 数据</returns>
-        public Dictionary<string, List<Dictionary<string, string>>> GetDataTableToDict(string sheetname = null)
+        /// <param name="sheetname"></param>
+        /// <returns></returns>
+        public List<Dictionary<string, string>> GetDataTableBySheetName(string sheetname)
         {
             // 判断文件是否存在
             if(!System.IO.File.Exists(FilePath))
             {
                 throw new System.Exception($"文件不存在：{FilePath}");
             }
-
             // 初始化结构数据
-            Dictionary<string, List<Dictionary<string, string>>> excelData = new Dictionary<string, List<Dictionary<string, string>>>();
+            List<Dictionary<string, string>> excelSheetData = new List<Dictionary<string, string>>();
+
             // 读取表格内容
             using(FileStream fs = File.OpenRead(FilePath))
             {
                 IWorkbook wk = new XSSFWorkbook(fs);
-
-                if(string.IsNullOrWhiteSpace(sheetname))
-                {
-                    // 获取每一页数据
-                    for(int i = 0; i < wk.NumberOfSheets; i++)
-                    {
-                        var _sheet = wk.GetSheetAt(i);
-                        var sheetData = GetSheetData(_sheet);
-                        excelData.Add(_sheet.SheetName, sheetData);
-                    }
-                }
-                else
+                // 判断名称是否存在
+                if(!string.IsNullOrWhiteSpace(sheetname))
                 {
                     // 获取指定页数据
                     ISheet sheet = null;
@@ -70,8 +61,38 @@ namespace HelperExcel
                     {
                         throw new System.Exception($"确认Excel文件中存在页名：{sheetname}");
                     }
-                    var sheetData = GetSheetData(sheet);
-                    excelData.Add(sheet.SheetName, sheetData);
+                    excelSheetData = GetSheetData(sheet);
+                }
+            }
+
+            return excelSheetData;
+        }
+
+
+        /// <summary>
+        /// 读取excel获取DataTable
+        /// </summary>
+        /// <returns> 读取excel 数据，返回 Dictionary 数据</returns>
+        public Dictionary<string, List<Dictionary<string, string>>> GetDataTableToDict()
+        {
+            // 判断文件是否存在
+            if(!System.IO.File.Exists(FilePath))
+            {
+                throw new System.Exception($"文件不存在：{FilePath}");
+            }
+
+            // 初始化结构数据
+            Dictionary<string, List<Dictionary<string, string>>> excelData = new Dictionary<string, List<Dictionary<string, string>>>();
+            // 读取表格内容
+            using(FileStream fs = File.OpenRead(FilePath))
+            {
+                IWorkbook wk = new XSSFWorkbook(fs);
+                // 获取每一页数据
+                for(int i = 0; i < wk.NumberOfSheets; i++)
+                {
+                    var _sheet = wk.GetSheetAt(i);
+                    var sheetData = GetSheetData(_sheet);
+                    excelData.Add(_sheet.SheetName, sheetData);
                 }
             }
 
